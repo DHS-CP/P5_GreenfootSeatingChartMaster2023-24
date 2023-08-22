@@ -1,5 +1,5 @@
 
-PROJECT TITLE: AP CSA Assignment 1 (An interactive seating chart using Greenfoot)
+ PROJECT TITLE: AP CSA Assignment 1 (An interactive seating chart using Greenfoot)
 
 PURPOSE OF PROJECT: The purpose of this assignment is to visually work with classes and subclasses, abstract classes, and interfaces, and to familiarize yourself with the basics of the GIT command line.  As a side effect, it will help your instructor learn your names!
 
