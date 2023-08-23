@@ -5,7 +5,7 @@
 5. Click `Create branch` or a similar confirmation button.
 6. (watch the gif below for detailed instructions)
 
-![image](https://im2.ezgif.com/tmp/ezgif-2-c6e2744805.gif)
+![image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2oyeHMwdzA3MTd6d3F0Nm45dGhweGZtcW1lcWxhZHNkb3plODlrbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MsjVYsfHJ9LapCbKoA/giphy.gif)
 
 Now, to work on this branch locally:
 
