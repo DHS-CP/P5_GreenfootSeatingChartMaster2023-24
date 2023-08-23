@@ -46,3 +46,5 @@ git push origin firstname-lastname
 18. Click 'Open pull request.'
 19. Fill in any additional details or leave a comment about the changes you've made.
 20. Click 'Create pull request' to submit your changes for review.
+
+![image](https://im.ezgif.com/tmp/ezgif-1-8686549797.gif)
