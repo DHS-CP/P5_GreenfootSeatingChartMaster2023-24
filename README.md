@@ -47,7 +47,7 @@ git push origin firstname-lastname
 19. Fill in any additional details or leave a comment about the changes you've made.
 20. Click 'Create pull request' to submit your changes for review.
 
-![image](https://im.ezgif.com/tmp/ezgif-1-8686549797.gif)
+![image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjBuYXZyczZvazZqejAzc3E2djlqOXRrZmk1Y2t1ZnVramZ2OWIyeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/is3Fgv5FMCRN8j7vQe/giphy.gif)
 
 (Ignore the red X's those just mean we will review and approve later)
 
