@@ -8,9 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MrKaehms extends Teacher //implements JustForFun
 {
-    
 
-   
     
     public MrKaehms () {
 
