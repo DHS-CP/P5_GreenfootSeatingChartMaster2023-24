@@ -1,8 +1,8 @@
 1. Go to GitHub and navigate to the main page of the repository.
-2. Click on the 'branches' tab (you should see a number indicating the current number of branches).
-3. Click on the green button labeled "New Branch."
-4. Name the new branch as firstname-lastname. Replace firstname and lastname with your actual first name and last name.
-5. Click 'Create branch' or a similar confirmation button.
+2. Click on the `branches` tab (you should see a number indicating the current number of branches).
+3. Click on the green button labeled `New Branch.`
+4. Name the new branch as ``firstname-lastname.`` Replace firstname and lastname with your actual first name and last name.
+5. Click `Create branch` or a similar confirmation button.
 6. (watch the gif below for detailed instructions)
 
 ![image](https://im2.ezgif.com/tmp/ezgif-2-c6e2744805.gif)
