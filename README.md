@@ -7,13 +7,13 @@
 
 ![image](https://im2.ezgif.com/tmp/ezgif-2-c6e2744805.gif)
 
-7. Now, to work on this branch locally:
+Now, to work on this branch locally:
 
-8. Open your terminal or command prompt.
+7.  Open your terminal or command prompt.
 
-9. Navigate to the directory where you want to clone the repository.
+8.  Navigate to the directory where you want to clone the repository.
 
-10. Clone the repository using the following command:
+9.  Clone the repository using the following command:
 ```bash
 git clone https://github.com/DHS-CP/P5_GreenfootSeatingChartMaster2023-24.git
 ```
