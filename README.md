@@ -50,3 +50,8 @@ git push origin firstname-lastname
 ![image](https://im.ezgif.com/tmp/ezgif-1-8686549797.gif)
 
 (Ignore the red X's those just mean we will review and approve later)
+
+Looks like this when we approve the final merge to the master branch:
+
+![image](https://github.com/DHS-CP/P5_GreenfootSeatingChartMaster2023-24/assets/65371337/f2b5e669-21b2-4966-81fe-16d3181db83c)
+
