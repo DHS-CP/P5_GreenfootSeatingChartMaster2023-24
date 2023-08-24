@@ -8,7 +8,8 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-
+//import java.util.List;
+//import java.util.Arrays;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
@@ -148,9 +149,9 @@ public class Classroom extends World
  // Each student needs to create their specific instance following the KilgoreTrout example.
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
-        KilgoreTrout kilgoretrout = new KilgoreTrout();
-        addObject(kilgoretrout,2,3);
-        kilgoretrout.assignSeat();
+        JasmineSabharwal jasminesabharwal = new JasmineSabharwal();
+        addObject(jasminesabharwal,2,3);
+        jasminesabharwal.assignSeat();
   
     }
     
