@@ -68,11 +68,12 @@ public class NikhilPrabhu extends Student implements SpecialInterestOrHobby
                 setImage(standing);
                 System.out.println(""); 
                 getName();
-                //sayName(soundFile);
+                sayName(soundFile);
             
                 myHobby("I like to play basketball!");
             
                 nikhilMove();  //my special method 
+       
            
                 returnToSeat();
             }
@@ -95,7 +96,10 @@ public class NikhilPrabhu extends Student implements SpecialInterestOrHobby
         int currentY = 3;
         int rotationAngle = 0;
         
+        GreenfootImage portraitFile = new GreenfootImage(firstName.toLowerCase()+ lastName.toLowerCase()+".png");
+        
     
+
         
         // right side
         for (int i=1;i<=4; i++){            
@@ -150,7 +154,12 @@ public class NikhilPrabhu extends Student implements SpecialInterestOrHobby
             
         }   
            Greenfoot.delay(8);
-         
+           portraitFile.scale(portraitFile.getWidth()/70, portraitFile.getHeight()/70);
+            rotationAngle += 180; 
+            setRotation(rotationAngle);
+
+           setImage(portraitFile);
+
            
             returnToSeat();
     }
