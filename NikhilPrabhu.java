@@ -28,9 +28,9 @@ public class NikhilPrabhu extends Student implements SpecialInterestOrHobby
         lastName=l;
         mySeatX=r;
         mySeatY=s;
-            // Make sure to name your image files firstlast.jpg, all lowercase!!!
+
         standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.png";
-        soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
+        soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Mak
         sitting=true;
     }
     /**
@@ -43,7 +43,6 @@ public class NikhilPrabhu extends Student implements SpecialInterestOrHobby
         lastName="Prabhu";
         mySeatX=1;
         mySeatY=1;
-       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         GreenfootImage portraitFile = new GreenfootImage(firstName.toLowerCase()+ lastName.toLowerCase()+".png");
         
@@ -60,7 +59,7 @@ public class NikhilPrabhu extends Student implements SpecialInterestOrHobby
     {
         // Add your action code here.
         if(Greenfoot.mouseClicked(this)){
-          //  if (sitting){
+  
                 sitting=false;
                 standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.png";
                 GreenfootImage standing = new GreenfootImage(standingFile);
