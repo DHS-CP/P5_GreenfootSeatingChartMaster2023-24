@@ -152,7 +152,7 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
         RamanArora ramanarora = new RamanArora();
-        addObject(ramanarora,2,3);
+        addObject(ramanarora,9,7);
         ramanarora.assignSeat();
   
     }
