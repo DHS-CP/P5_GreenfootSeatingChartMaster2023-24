@@ -1,13 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * The KilgoreTrout class can be used as a model for your own class that represents you and your seating location in AP CSA
+ * Write a description of class DheeshikRamachandran here.
  * 
- * @author Mr. Kaehms
- * @version 2.0 Aug 13, 2019
- * @version 3.0 July 21, 2020
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public class KilgoreTrout extends Student implements SpecialInterestOrHobby
+public class DheeshikRamachandran extends Student
 {
 
     /**
@@ -23,7 +22,7 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public KilgoreTrout(String f, String l, int r, int s) {
+    public DheeshikRamachandran(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         mySeatX=r;
@@ -39,7 +38,7 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public KilgoreTrout() {
+    public DheeshikRamachandran() {
         firstName="Kilgore";
         lastName="Trout";
         mySeatX=1;
@@ -131,5 +130,4 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      public void myHobby(String s) {
          System.out.println(s);
     }
-
 }
