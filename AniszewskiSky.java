@@ -42,8 +42,8 @@ public class AniszewskiSky extends Student implements SpecialInterestOrHobby
     public AniszewskiSky() {
         firstName="Sky";
         lastName="Aniszewski";
-        mySeatX=5;
-        mySeatY=-5;
+        mySeatX=7;
+        mySeatY=-7;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.JPG";
@@ -98,11 +98,12 @@ public class AniszewskiSky extends Student implements SpecialInterestOrHobby
      * You should write your own methods to perform your own animation for your character/avatar.
      */
     public void circleClass(){
-        setLocation(0,0);
+        setLocation(7,0);
          Greenfoot.delay(10);
         // move right
+        
         for (int i=1;i<=9;i++){
-            setLocation(i,0);
+            setLocation(7,i);
             Greenfoot.delay(10);
         }
         // move back

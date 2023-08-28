@@ -154,7 +154,7 @@ public class Classroom extends World
         kilgoretrout.assignSeat();
         
         AniszewskiSky skyaniszewski = new AniszewskiSky();
-        addObject(skyaniszewski, 5,6);
+        addObject(skyaniszewski, 9,6);
         skyaniszewski.assignSeat();
   
     }
