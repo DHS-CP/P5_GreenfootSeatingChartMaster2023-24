@@ -69,5 +69,23 @@ public abstract class Student extends Actor
         mySeatX=getX();
         mySeatY=getY();
     }
+    
+    public void disco() {
+        
+        for (int i=0; i <=15; i++){
+            int originalWidth = getImage().getWidth();
+            int originalHeight = getImage().getHeight();
+            setRotation(15);
+            getImage().setTransparency(255);
+            getImage().scale(originalWidth*2,originalWidth*2);
+            Greenfoot.delay(5);
+            getImage().scale(originalWidth,originalHeight);
+            setRotation(-15);
+            getImage().scale(originalWidth*2,originalWidth*2);
+            Greenfoot.delay(5);
+            getImage().scale(originalWidth,originalHeight);
+            getImage().setTransparency(0);
+    }
  
+}
 }
