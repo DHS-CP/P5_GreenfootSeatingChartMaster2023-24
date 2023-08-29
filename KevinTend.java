@@ -104,8 +104,9 @@ public class KevinTend extends Student implements SpecialInterestOrHobby
 
    
     /**
-     * This is a local method specific to the KilgoreTrout class used to animate the character once the image is clicked on.
-     * You should write your own methods to perform your own animation for your character/avatar.
+     * Animation for KevinTend
+     * Teleports image to the center of the classroom, creates duplicates in a spiral pattern, 
+     * then deletes them in a reverse spirtal pattern.
      */
     public void animation(){
         int x = 6;
