@@ -104,30 +104,35 @@ public class AdityaDas extends Student implements SpecialInterestOrHobby
         //move down
         for (int i=1;i<=5;i++){
             setLocation(6,i);
+            setRotation(-20*i);
             Greenfoot.delay(10);
         }      
         
         //move up
         for (int i=10;i>=0;i--){
             setLocation(6,i);
+            setRotation(20*i);
             Greenfoot.delay(10);
         }      
         
         //move left
         for (int i=6;i>=1;i--) {
             setLocation(6+i, 2);
+            setRotation(-20*i);
             Greenfoot.delay(10);
         }
         
         //move right
         for (int i=1;i<=9;i++) {
             setLocation(1+i, 2);
+            setRotation(20*i);
             Greenfoot.delay(10);
         }
         
         //diagonal left up
         for (int i=9;i>=0;i--) {
             setLocation(i,i);
+            setRotation(60*i);
             Greenfoot.delay(10);
         }
         
