@@ -100,25 +100,29 @@ public class AniszewskiSky extends Student implements SpecialInterestOrHobby
     public void circleClass(){
         setLocation(7,0);
          Greenfoot.delay(10);
-        // move right
+        // move down
         
-        for (int i=1;i<=9;i++){
-            setLocation(7,i);
+        for (int i=1;i<=12;i+=1){
+            setLocation(6,i);
             Greenfoot.delay(10);
         }
-        // move back
-        for (int i=1;i<=5;i++){
-            setLocation(9,i);
+        // move up
+        for (int i=1;i<=10;i+=1){
+            setLocation(6,16 - i);
             Greenfoot.delay(10);
         }      
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
+        
+        for (int i=1; i<=30; i+=1) {
+            turn(12);
+            Greenfoot.delay(5);
+        }
+         for (int i=6;i>=0;i--){
+            setLocation(i,6);
             Greenfoot.delay(10);
         }      
               // move Forward
-        for (int i=5;i>=0;i--){
-            setLocation(0,i);
+        for (int i=1;i<=10;i++){
+            setLocation(i,6);
             Greenfoot.delay(10);
         }   
            Greenfoot.delay(20);
