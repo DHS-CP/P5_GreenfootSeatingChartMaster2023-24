@@ -69,5 +69,24 @@ public abstract class Student extends Actor
         mySeatX=getX();
         mySeatY=getY();
     }
+    /*
+     * doABarrelRoll() will cause a student object to do a barrel roll forwards and backwards. 
+     * This can be used during the animation when a student is clicked on.  
+     * Created by Tharun Selvakumar, Sid Mathur, Aidan Spies, and Himanshu M.
+     */
+    public void doABarrelRoll(){
+        for(int i = 0; i < 8; i++){
+            setLocation(this.getX() + 1, this.getY());
+            //Greenfoot.delay(1);
+            turn(45);
+            Greenfoot.delay(7);
+        }
+        for(int i = 0; i < 8; i++){
+            setLocation(this.getX() - 1, this.getY()); 
+            //Greenfoot.delay(1);
+            turn(-45);
+            Greenfoot.delay(7);
+        }
+    }
  
 }
