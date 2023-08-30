@@ -1,5 +1,13 @@
 #Greenfoot project file
 class.Classroom.image=csa.jpg
+<<<<<<< HEAD
+class.KilgoreTrout.image=kilgoretrout.jpg
+class.MrKaehms.image=MrKaehms.jpg
+class.NikhilPrabhu.image=nikhilp.png
+class.StudentDesk.image=studentDesk.png
+class.StudentDeskGroup.image=tableGroup.png
+class.TeacherDesk.image=TeacherDesk.png
+=======
 class.KilgoreTrout.image=man01.png
 class.MrKaehms.image=MrKaehms.jpg
 
@@ -12,6 +20,7 @@ class.StudentDeskGroup.image=tableGroup.png
 class.TeacherDesk.image=TeacherDesk.png
 class.TharunSelvakumar.image=man01.png
 
+>>>>>>> master
 dependency1.from=Classroom
 dependency1.to=StudentDesk
 dependency1.type=UsesDependency
@@ -19,6 +28,11 @@ dependency2.from=Classroom
 dependency2.to=TeacherDesk
 dependency2.type=UsesDependency
 dependency3.from=Classroom
+<<<<<<< HEAD
+dependency3.to=NikhilPrabhu
+dependency3.type=UsesDependency
+dependency4.from=Classroom
+=======
 dependency3.to=KilgoreTrout
 dependency3.type=UsesDependency
 dependency4.from=Classroom
@@ -40,6 +54,7 @@ editor.fx.0.x=540
 editor.fx.0.y=93
 height=891
 package.numDependencies=7
+>>>>>>> master
 dependency4.to=Student
 dependency4.type=UsesDependency
 dependency5.from=Classroom
@@ -48,6 +63,14 @@ dependency5.type=UsesDependency
 dependency6.from=Student
 dependency6.to=Classroom
 dependency6.type=UsesDependency
+<<<<<<< HEAD
+editor.fx.0.height=728
+editor.fx.0.width=800
+editor.fx.0.x=368
+editor.fx.0.y=62
+height=836
+package.numDependencies=6
+=======
 editor.fx.0.height=722
 editor.fx.0.width=941
 editor.fx.0.x=224
@@ -55,6 +78,7 @@ editor.fx.0.y=23
 height=830
 package.numDependencies=6
 
+>>>>>>> master
 package.numTargets=15
 project.charset=UTF-8
 publish.hasSource=false
@@ -66,6 +90,17 @@ publish.title=
 publish.url=
 readme.height=60
 readme.name=@README
+<<<<<<< HEAD
+readme.width=48
+readme.x=10
+readme.y=10
+simulation.speed=45
+target1.height=50
+target1.name=StudentLeadership
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=InterfaceTarget
+=======
 
 readme.width=49
 
@@ -86,6 +121,7 @@ target1.naviview.expanded=true
 target1.showInterface=false
 target1.type=InterfaceTarget
 
+>>>>>>> master
 target1.width=140
 target1.x=0
 target1.y=0
@@ -97,6 +133,15 @@ target10.type=InterfaceTarget
 target10.width=120
 target10.x=0
 target10.y=0
+<<<<<<< HEAD
+target11.height=70
+target11.name=KilgoreTrout
+target11.showInterface=false
+target11.type=ClassTarget
+target11.width=120
+target11.x=0
+target11.y=0
+=======
 target11.height=50
 target11.name=KilgoreTrout
 target11.naviview.expanded=true
@@ -105,6 +150,7 @@ target11.type=ClassTarget
 target11.width=90
 target11.x=160
 target11.y=300
+>>>>>>> master
 target12.height=50
 target12.name=TeacherDesk
 target12.naviview.expanded=true
@@ -121,6 +167,15 @@ target13.type=InterfaceTarget
 target13.width=140
 target13.x=0
 target13.y=0
+<<<<<<< HEAD
+target14.height=70
+target14.name=DateFormatter
+target14.showInterface=false
+target14.type=ClassTarget
+target14.width=120
+target14.x=0
+target14.y=0
+=======
 
 target14.height=50
 target14.name=Classroom
@@ -150,6 +205,7 @@ target14.type=ClassTarget
 target14.width=120
 target14.x=0
 target14.y=0
+>>>>>>> master
 target15.height=50
 target15.name=Classroom
 target15.naviview.expanded=true
@@ -163,7 +219,10 @@ target2.name=StudentDeskGroup
 target2.naviview.expanded=true
 target2.showInterface=false
 target2.type=ClassTarget
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 target2.width=140
 target2.x=0
 target2.y=0
@@ -176,6 +235,8 @@ target3.width=100
 target3.x=0
 target3.y=0
 target4.height=50
+<<<<<<< HEAD
+=======
 
 target4.name=MrKaehms
 target4.naviview.expanded=true
@@ -193,6 +254,7 @@ target5.width=110
 target5.x=10
 target5.y=480
 
+>>>>>>> master
 target4.name=SpecialInterestOrHobby
 target4.naviview.expanded=true
 target4.showInterface=false
@@ -208,7 +270,10 @@ target5.type=ClassTarget
 target5.width=90
 target5.x=0
 target5.y=0
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 target6.height=50
 target6.name=Teacher
 target6.naviview.expanded=true
@@ -217,6 +282,23 @@ target6.type=AbstractTarget
 target6.width=80
 target6.x=10
 target6.y=420
+<<<<<<< HEAD
+target7.height=70
+target7.name=NikhilPrabhu
+target7.showInterface=false
+target7.type=ClassTarget
+target7.width=120
+target7.x=0
+target7.y=0
+target8.height=50
+target8.name=NumberOfSiblings
+target8.naviview.expanded=true
+target8.showInterface=false
+target8.type=InterfaceTarget
+target8.width=140
+target8.x=120
+target8.y=240
+=======
 target7.height=50
 target7.name=NumberOfSiblings
 target7.naviview.expanded=true
@@ -233,6 +315,7 @@ target8.type=ClassTarget
 target8.width=120
 target8.x=0
 target8.y=0
+>>>>>>> master
 target9.height=50
 target9.name=Student
 target9.naviview.expanded=true
@@ -242,6 +325,12 @@ target9.width=80
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< HEAD
+width=1127
+world.lastInstantiated=Classroom
+xPosition=37
+yPosition=25
+=======
 width=1550
 world.lastInstantiated=Classroom
 xPosition=0
@@ -268,3 +357,4 @@ world.lastInstantiated=Classroom
 xPosition=25
 yPosition=38
 
+>>>>>>> master
