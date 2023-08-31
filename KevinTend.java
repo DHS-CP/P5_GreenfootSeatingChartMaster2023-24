@@ -112,10 +112,11 @@ public class KevinTend extends Student implements SpecialInterestOrHobby
         int x = 6;
         int y = 6;
         int n = 1;
+        ArrayList<Actor> KevinTendList = new ArrayList<Actor>();
         
         setLocation(6, 6);
         Greenfoot.delay(20);
-        ArrayList<Actor> KevinTendList = new ArrayList<Actor>();
+        
         
         for (int i = 0; i < 4; i++) {
           for (int j = 0; j < n; j++) {
@@ -153,9 +154,9 @@ public class KevinTend extends Student implements SpecialInterestOrHobby
           n++;
             }
         while (KevinTendList.size() > 0) {
-           getWorld().removeObject(KevinTendList.get(KevinTendList.size() - 1));
-            KevinTendList.remove(KevinTendList.get(KevinTendList.size() - 1));
-            Greenfoot.delay(3); 
+          getWorld().removeObject(KevinTendList.get(KevinTendList.size() - 1));
+          KevinTendList.remove(KevinTendList.get(KevinTendList.size() - 1));
+          Greenfoot.delay(3); 
         }
         returnToSeat();
     }
