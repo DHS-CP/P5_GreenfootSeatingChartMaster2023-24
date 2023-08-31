@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=RyanSaleh
+comment0.text=\n\ Write\ a\ description\ of\ class\ RyanSaleh\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=f\ l\ r\ s
+comment1.target=RyanSaleh(java.lang.String,\ java.lang.String,\ int,\ int)
+comment2.params=
+comment2.target=RyanSaleh()
+comment2.text=\n\ Default\ constructor,\ if\ you\ don't\ pass\ in\ a\ name\ and\ seating\ location\n\ Pay\ attention\ to\ how\ the\ row\ and\ seat\ variables\ set\ the\ location\ of\ the\ image.\ \ 1,1\ is\ the\ first\ cell\ in\ the\ upper\ left\n\ of\ the\ classroom.\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\n\ Act\ -\ do\ whatever\ the\ KilgoreTrout\ actor\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment4.params=
+comment4.target=void\ animationf()
+comment5.params=
+comment5.target=void\ animations()
+comment6.params=
+comment6.target=void\ animationb()
+comment7.params=
+comment7.target=void\ getName()
+comment7.text=\n\ Prints\ the\ first\ and\ last\ name\ to\ the\ console\n
+comment8.params=
+comment8.target=void\ circleClass()
+comment8.text=\n\ This\ is\ a\ local\ method\ specific\ to\ the\ KilgoreTrout\ class\ used\ to\ animate\ the\ character\ once\ the\ image\ is\ clicked\ on.\n\ You\ should\ write\ your\ own\ methods\ to\ perform\ your\ own\ animation\ for\ your\ character/avatar.\n
+comment9.params=s
+comment9.target=void\ myHobby(java.lang.String)
+comment9.text=\n\ myHobby\ is\ one\ of\ the\ interfaces\ provided.\ \ \n\ An\ interface\ is\ just\ a\ contract\ for\ the\ methods\ that\ you\ will\ implement\ in\ your\ code.\ \ The\ College\ Board\ no\ longer\n\ tests\ on\ abstract\ classes\ and\ interfaces,\ but\ it\ is\ good\ to\ know\ about\ them\n
+numComments=10
