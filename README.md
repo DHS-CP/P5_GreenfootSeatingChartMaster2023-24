@@ -1,8 +1,8 @@
 For questions, here are the builmasters discords:
 
-Mohit: momodn
-Dheeshik: dheeshik
-Raman: ranoodles
+ - Mohit: momodn
+ - Dheeshik: dheeshik
+ - Raman: ranoodles
 
 1. Go to GitHub and navigate to the main page of the repository (you are already here)
 2. Click on the `branches` tab (you should see a number indicating the current number of branches).
