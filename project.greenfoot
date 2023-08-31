@@ -1,4 +1,5 @@
 #Greenfoot project file
+<<<<<<< HEAD
 class.Classroom.image=csa.jpg
 class.JonathanAdrian.image=jonathanadrian-celebration.png
 class.KilgoreTrout.image=man01.png
@@ -171,3 +172,5 @@ width=1127
 world.lastInstantiated=Classroom
 xPosition=0
 yPosition=25
+=======
+>>>>>>> master
