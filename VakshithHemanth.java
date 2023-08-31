@@ -74,7 +74,13 @@ Random random = new Random();
                 breakdance();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
            
                 sitDown();
+            
+        
             }
+        //group function
+        if (Greenfoot.isKeyDown("D")){
+            jump();
+}
         
     } 
     
