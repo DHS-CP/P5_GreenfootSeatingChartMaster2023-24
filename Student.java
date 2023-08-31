@@ -71,8 +71,8 @@ public abstract class Student extends Actor
         mySeatY=getY();
     }
 
-    /** Description of myMethod(int a, String b)
-    * ...brief description ....
+    /** Description of jump()
+    * Makes the members of the group jump/get larger, and spin.
     * 
     * @author Dheeshik Ramachandran
     * @author Vakshith Hemanth
