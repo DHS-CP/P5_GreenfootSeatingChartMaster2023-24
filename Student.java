@@ -72,7 +72,47 @@ public abstract class Student extends Actor
     }
 
     
-    
+ /**
+ * Description of epicDanceMove()
+ * The epicDanceMove method incorporates elements from both disco() and doABarrelRoll() methods
+ * to create a unique dance move. The student object will zigzag, flash colors, and spin.
+ *
+ * @author Mohit, Eric, Shivani, Samika
+ * @version 1.2z Build 9002 Aug 30, 2023.
+ */
+public void epicDanceMove() {
+    for (int i = 0; i <= 5; i++) {
+        int originalWidth = getImage().getWidth();
+        int originalHeight = getImage().getHeight();
+        
+        // Start by doing the zigzag
+        setLocation(this.getX() + 5, this.getY() + 5);
+        Greenfoot.delay(3);
+        setLocation(this.getX() - 5, this.getY() - 5);
+        Greenfoot.delay(3);
+        
+        // Turn 30 degrees
+        turn(30);
+        Greenfoot.delay(5);
+
+        // Change the image to a random color (assuming you have a method to do this)
+        changeRandomColor();
+        Greenfoot.delay(5);
+
+        // Resize the image to 1.5x its original dimensions
+        getImage().scale((int)(originalWidth * 1.5), (int)(originalHeight * 1.5));
+        Greenfoot.delay(5);
+        
+        // Turn -30 degrees
+        turn(-30);
+        Greenfoot.delay(5);
+
+        // Restore the image to its original dimensions and color
+        getImage().scale(originalWidth, originalHeight);
+        resetColor();
+        Greenfoot.delay(5);
+    }
+}
     /** Description of disco()
  * The disco method makes the student do a dance where they shake, increase and decrease size, and change transparency
  * 
