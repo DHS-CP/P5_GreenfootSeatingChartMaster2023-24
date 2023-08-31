@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.lang.Math;
 /**
  * Write a description of class DheeshikRamachandran here.
  * 
@@ -8,31 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class DheeshikRamachandran extends Student
 {
-
-    /**
-     * Hello world
-     * Constructor for the KilgoreTrout class.
-     * Constructors are special methods with the same exact name as the class name.  
-     * Constructors to not have return types.
-     * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
-     *  lists to initalize for different conditions (depending on what constructors have been written.
-     * @param String f (firstname)
-     * @param String l (lastname)
-     * @param int r (row of seating arrangement)
-     * @param int s (seat number within row seating arrangement)
-     * 
-     */
-    public DheeshikRamachandran(String f, String l, int r, int s) {
-        firstName=f;
-        lastName=l;
-        mySeatX=r;
-        mySeatY=s;
-        portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
-        setImage(portraitFile);
-        sitting=true;
-    }
     /**
      * Default constructor, if you don't pass in a name and seating location
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
@@ -46,7 +21,7 @@ public class DheeshikRamachandran extends Student
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".m4a";
+        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
     }
@@ -75,7 +50,9 @@ public class DheeshikRamachandran extends Student
            
                 sitDown();
             }
-        
+        if (Greenfoot.isKeyDown("D")){
+            jump();
+        }
     } 
     
     /**
@@ -98,7 +75,7 @@ public class DheeshikRamachandran extends Student
      */
     public void circleClass(){
         setLocation(5,4);
-         Greenfoot.delay(10);
+        Greenfoot.delay(10);
         // move right
         for (int i=1;i<=20;i++){
             turn(1);
@@ -106,24 +83,23 @@ public class DheeshikRamachandran extends Student
         }
         // move back
         for (int i=1;i<=40;i++){
-            turn(-1);
+            turn(-10);
             Greenfoot.delay(1);
-        }   
-        // move back
+        }
         for (int i=1;i<=20;i++){
             turn(1);
             Greenfoot.delay(1);
-        }   
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
         } 
-         // move left
-        for (int i=9;i>=0;i--){
-            setLocation(i,5);
-            Greenfoot.delay(10);
-        } 
+        
+        for (int i = 0; i < 15; i++){
+            setLocation(i,4 + (int)(2 * Math.sin(i)));
+            Greenfoot.delay(2);
+        }
+        
+        for (int i = 15; i > 0; i--){
+            setLocation(i,4 + (int)(2 * Math.cos(i)));
+            Greenfoot.delay(2);
+        }
         
            Greenfoot.delay(20);
            returnToSeat();
