@@ -61,6 +61,7 @@ public class AdityaDas extends Student implements SpecialInterestOrHobby
         
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
+                disco();
                 sitting=false;
                 setImage(standingFile);
                 System.out.println(""); // Print a blank line to create space between any student output.
