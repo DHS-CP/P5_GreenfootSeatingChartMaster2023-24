@@ -11,7 +11,11 @@ public class VishnuD extends Student implements SpecialInterestOrHobby
 {
 
     /**
+<<<<<<< HEAD:KilgoreTrout.java
+     * Constructor for the KilgoreTrout class.
+=======
      * Constructor for the VishnuD class.
+>>>>>>> master:VishnuD.java
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.
      * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
