@@ -67,6 +67,10 @@ public class AnuragJakkula extends Student implements SpecialInterestOrHobby
     {
 
         // Add your action code here.
+
+            if (Greenfoot.isKeyDown("D")){
+            jump();}
+        
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;
