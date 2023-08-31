@@ -190,7 +190,11 @@ public class Classroom extends World
         VishnuD vishnud = new VishnuD();
         addObject(vishnud,8,7);
         vishnud.assignSeat();
-  
+
+        AlessandraYu alessandrayu = new AlessandraYu();
+        addObject(alessandrayu,2,7);
+        alessandrayu.assignSeat();
+
         RamanArora ramanarora = new RamanArora();
         addObject(ramanarora,9,7);
         ramanarora.assignSeat();
