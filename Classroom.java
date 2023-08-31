@@ -154,17 +154,20 @@ public class Classroom extends World
         NikhilPrabhu nikhilprabhu = new NikhilPrabhu();
         addObject(nikhilprabhu,5,3);
         nikhilprabhu.assignSeat();
-  
-
+        
+ 
         // KilgoreTrout kilgoretrout = new KilgoreTrout();
         // addObject(kilgoretrout,2,3);
         // kilgoretrout.assignSeat();
+        ShivaniSridhar shivanisridhar = new ShivaniSridhar();
+        addObject(shivanisridhar,3,3);
+        shivanisridhar.assignSeat();
+        
 
 
-
-        KilgoreTrout kilgoretrout = new KilgoreTrout();
-        addObject(kilgoretrout,2,3);
-        kilgoretrout.assignSeat();
+        //KilgoreTrout kilgoretrout = new KilgoreTrout();
+        //addObject(kilgoretrout,2,3);
+        //kilgoretrout.assignSeat();
         
         AidanSpies aidanspies = new AidanSpies();
         addObject(aidanspies, 5, 10);
