@@ -88,5 +88,77 @@ public abstract class Student extends Actor
             Greenfoot.delay(7);
         }
     }
- 
+    
+    /** Description of twirlClass()
+ * student twirls around the class, teleporting to each corner of the room and near the desks 
+ * each time the student teleports, they turn slightly
+ * student teleports in a circle in the center of the classroom slowly
+ * after they are done twirling around, the student does one final spin and teleports back to their original seat
+ * 
+ * @author Harini Suresh
+ * @author Alessandra Yu
+ * @author Kevin Tend
+ * @author Daniel Yawar
+
+ * @version Aug 31, 2023.
+ *
+  */
+    public void twirlClass(){
+        
+        setLocation(1, 2);
+        Greenfoot.delay(15);
+        
+        setLocation(5, 2);
+        Greenfoot.delay(15);
+        
+        setLocation(10, 2);
+        Greenfoot.delay(15);
+        
+        setLocation(10, 6);
+        Greenfoot.delay(15);
+        
+        setLocation(10, 11);
+        Greenfoot.delay(15);
+        
+        setLocation(6, 11);
+        Greenfoot.delay(15);
+        
+        setLocation(1, 11);
+        Greenfoot.delay(15);
+        
+        setLocation(1, 7);
+        Greenfoot.delay(15);
+
+        
+        turn(72);
+        setLocation(7, 4);
+        Greenfoot.delay(30);
+        
+        turn(72);
+        setLocation(7, 7);
+        Greenfoot.delay(30);
+        
+        turn(72);
+        setLocation(5, 7);
+        Greenfoot.delay(30);
+        
+        turn(72);
+        setLocation(5, 4);
+        Greenfoot.delay(30);
+        
+        turn(72);
+        setLocation(7, 4);
+        Greenfoot.delay(30);
+
+        for (int i = 0; i < 18; i++) {
+                turn(20);
+                Greenfoot.delay(10);
+        }
+         
+        returnToSeat();
 }
+
+    }
+
+ 
+
