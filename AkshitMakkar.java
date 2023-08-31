@@ -71,7 +71,7 @@ public class AkshitMakkar extends Student implements SpecialInterestOrHobby
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                circleClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                diamondToChaosClass();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
            
                 sitDown();
             }
@@ -96,32 +96,59 @@ public class AkshitMakkar extends Student implements SpecialInterestOrHobby
      * This is a local method specific to the AkshitMakkar class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
-    public void circleClass(){
+    public void diamondToChaosClass(){
     
         setLocation(3,6);
          Greenfoot.delay(10);
         for (int r=1;r<=2;r++){ 
-            // move down diagnal
+            // move down diagonal
             for (int i=1;i<=3;i++){
                 setLocation(3+i,6+i);
                 Greenfoot.delay(10);
             }
         
-            /// move up diagnol
+            /// move up diagonol
             for (int i=1;i<=3;i++){
                 setLocation(6+i,9-i);
                 Greenfoot.delay(10);
             }      
         
-            // move down diagnal
+            // move down diagonal
             for (int i=1;i<=3;i++){
                 setLocation(9-i,6-i);
                 Greenfoot.delay(10);
             }
         
-            /// move up diagnol
+            /// move up diagonol
             for (int i=1;i<=3;i++){
                 setLocation(6-i,3+i);
+                Greenfoot.delay(10);
+            }     
+        
+        }
+        
+        for (int r=1;r<=2;r++){ 
+            // move down diagonal
+            for (int i=1;i<=3;i++){
+                setLocation(6+i,3-i);
+                Greenfoot.delay(10);
+            }
+        
+            /// move up diagonol
+            for (int i=1;i<=3;i++){
+                setLocation(9+i,6+i);
+                Greenfoot.delay(10);
+            }      
+        
+            // move down diagonal
+            for (int i=1;i<=3;i++){
+                setLocation(6-i,9+i);
+                Greenfoot.delay(10);
+            }
+        
+            /// move up diagonol
+            for (int i=1;i<=3;i++){
+                setLocation(3-i,6-i);
                 Greenfoot.delay(10);
             }     
         
