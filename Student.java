@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
+import java.lang.Math;
 /**
  * Write a description of class Student here.
  * 
@@ -23,7 +24,7 @@ public abstract class Student extends Actor
    public String standingFile; // image used when standing
    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
    Classroom clas = (Classroom) getWorld();
-   public void setSeatX(int r){
+    public void setSeatX(int r){
        mySeatX=r;
     }
     
@@ -69,5 +70,135 @@ public abstract class Student extends Actor
         mySeatX=getX();
         mySeatY=getY();
     }
+
+    /** Description of myMethod(int a, String b)
+    * ...brief description ....
+    * 
+    * @author Dheeshik Ramachandran
+    * @author Vakshith Hemanth
+    * @author Anurag Jakkula
+    * @author Nikhil Prabu
+    * @version 1.0 Build 1 Aug 30, 2023.
+    *
+    *
+    */
+    public void jump(){
+        int originalWidth = getImage().getWidth();
+        int originalHeight = getImage().getHeight();
+        for (int i = 1; i <= 10; i++){
+            if (i != 1){
+                getImage().scale((int)(originalWidth * i), (int)(originalHeight * i));
+            }
+            turn((int)(i * 0.5));
+            Greenfoot.delay(1);;
+        }
+        for (int i = 10; i > 1; i--){
+            if (i != 1){
+                getImage().scale((int)(originalWidth * i), (int)(originalHeight * i));
+            }
+            turn((int)(i * 0.5));
+            Greenfoot.delay(1);
+        }
+        getImage().scale(originalWidth, originalHeight);
+        setRotation(0);
+        returnToSeat();
+    }
+    
+
+    
+ /**
+ * Description of epicDanceMove()
+ * The epicDanceMove method incorporates elements from both disco() and doABarrelRoll() methods
+ * to create a unique dance move. The student object will zigzag, flash colors, and spin.
+ *
+ * @author Mohit, Eric, Shivani, Samika
+ * @version 1.2z Build 9002 Aug 30, 2023.
+ */
+public void epicDanceMove() {
+    for (int i = 0; i <= 5; i++) {
+        int originalWidth = getImage().getWidth();
+        int originalHeight = getImage().getHeight();
+        
+        // Start by doing the zigzag
+        setLocation(this.getX() + 5, this.getY() + 5);
+        Greenfoot.delay(3);
+        setLocation(this.getX() - 5, this.getY() - 5);
+        Greenfoot.delay(3);
+        
+        // Turn 30 degrees
+        turn(30);
+        Greenfoot.delay(5);
+
+        // Change the image to a random color (assuming you have a method to do this)
+        changeRandomColor();
+        Greenfoot.delay(5);
+
+        // Resize the image to 1.5x its original dimensions
+        getImage().scale((int)(originalWidth * 1.5), (int)(originalHeight * 1.5));
+        Greenfoot.delay(5);
+        
+        // Turn -30 degrees
+        turn(-30);
+        Greenfoot.delay(5);
+
+        // Restore the image to its original dimensions and color
+        getImage().scale(originalWidth, originalHeight);
+        resetColor();
+        Greenfoot.delay(5);
+    }
+}
+    /** Description of disco()
+ * The disco method makes the student do a dance where they shake, increase and decrease size, and change transparency
+ * 
+ * @author Aditya D
+ * @author Raman A
+ * @author Conrad A
+ * @author Vishnu D
+ * @version 1.0z Build 9000 Aug 30, 2023.
+ */
+    public void disco() {
+        
+        for (int i=0; i <=15; i++){
+            int originalWidth = getImage().getWidth();
+            int originalHeight = getImage().getHeight();
+            setRotation(15);
+            getImage().setTransparency(255);
+            Greenfoot.delay(10);
+            getImage().scale(originalWidth*2,originalWidth*2);
+            Greenfoot.delay(10);
+            getImage().scale(originalWidth,originalHeight);
+            Greenfoot.delay(10);
+            setRotation(-15);
+            Greenfoot.delay(10);
+            getImage().scale(originalWidth*2,originalWidth*2);
+            Greenfoot.delay(10);
+            getImage().scale(originalWidth,originalHeight);
+            Greenfoot.delay(10);
+            getImage().setTransparency(0);
+            Greenfoot.delay(10);
+        }
+    }
+    /*
+     * doABarrelRoll() will cause a student object to do a barrel roll forwards and backwards. 
+     * This can be used during the animation when a student is clicked on.  
+     * Created by Tharun Selvakumar, Sid Mathur, Aidan Spies, and Himanshu M.
+     */
+    public void doABarrelRoll(){
+        for(int i = 0; i < 8; i++){
+            setLocation(this.getX() + 1, this.getY());
+            //Greenfoot.delay(1);
+            turn(45);
+            Greenfoot.delay(7);
+        }
+        for(int i = 0; i < 8; i++){
+            setLocation(this.getX() - 1, this.getY()); 
+            //Greenfoot.delay(1);
+            turn(-45);
+            Greenfoot.delay(7);
+        }
+
+    }
  
+
+}
 }
