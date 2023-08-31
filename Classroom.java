@@ -171,7 +171,7 @@ public class Classroom extends World
        
        
         AnuragJakkula anuragjakkula = new AnuragJakkula();
-        addObject(anuragjakkula, 8,7);
+        addObject(anuragjakkula, 6,4);
         anuragjakkula.assignSeat();
 
         
