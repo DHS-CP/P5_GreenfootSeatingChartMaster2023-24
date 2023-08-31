@@ -129,10 +129,8 @@ public void epicDanceMove() {
         turn(30);
         Greenfoot.delay(5);
 
-        // Change the image to a random color (assuming you have a method to do this)
-        changeRandomColor();
-        Greenfoot.delay(5);
-
+        // Note: Removed the changeRandomColor() line
+        
         // Resize the image to 1.5x its original dimensions
         getImage().scale((int)(originalWidth * 1.5), (int)(originalHeight * 1.5));
         Greenfoot.delay(5);
@@ -141,12 +139,13 @@ public void epicDanceMove() {
         turn(-30);
         Greenfoot.delay(5);
 
-        // Restore the image to its original dimensions and color
+        // Restore the image to its original dimensions
+        // Note: Removed the resetColor() line
         getImage().scale(originalWidth, originalHeight);
-        resetColor();
         Greenfoot.delay(5);
     }
 }
+
     /** Description of disco()
  * The disco method makes the student do a dance where they shake, increase and decrease size, and change transparency
  * 
