@@ -128,9 +128,6 @@ public void epicDanceMove() {
         // Turn 30 degrees
         turn(30);
         Greenfoot.delay(5);
-
-        // Note: Removed the changeRandomColor() line
-        
         // Resize the image to 1.5x its original dimensions
         getImage().scale((int)(originalWidth * 1.5), (int)(originalHeight * 1.5));
         Greenfoot.delay(5);
@@ -197,7 +194,27 @@ public void epicDanceMove() {
         }
 
     }
+    
+/*
+     * cannonBall() "shoots" a student object diagonally across the seating chart multiple
+     * times, rotating like a real cannonball projectile would.
+     * Created by Akshit M, Arun, Ryan, Jasmine S
+     */
+    public void cannonBall(){
+        for (int r = 0; r<=3; r++){
+            for(int i = 0; i < 15; i++){
+            setLocation(0, 0);
+            turn(90);
+            setLocation(i, i);
+            Greenfoot.delay(5);
+            }
+        }
+        
+        
+        
+
+    }
  
 
 }
-}
+
