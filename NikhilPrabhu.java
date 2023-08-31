@@ -76,6 +76,9 @@ public class NikhilPrabhu extends Student implements SpecialInterestOrHobby
            
                 returnToSeat();
             }
+        if (Greenfoot.isKeyDown("D")){
+            jump();
+        }
         
     } 
     
