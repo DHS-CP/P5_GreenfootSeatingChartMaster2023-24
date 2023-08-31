@@ -209,6 +209,10 @@ public class Classroom extends World
         SamikaSripathi samikasripathi = new SamikaSripathi();
         addObject(samikasripathi,3,4);
         samikasripathi.assignSeat();
+        
+        ChandiniChennakesavan chandinichennakesavan = new ChandiniChennakesavan();
+        addObject(chandinichennakesavan,9,10);
+        chandinichennakesavan.assignSeat();
 
 
     }
