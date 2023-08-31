@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
+import java.lang.Math;
 /**
  * Write a description of class Student here.
  * 
@@ -23,7 +24,7 @@ public abstract class Student extends Actor
    public String standingFile; // image used when standing
    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
    Classroom clas = (Classroom) getWorld();
-   public void setSeatX(int r){
+    public void setSeatX(int r){
        mySeatX=r;
     }
     
@@ -69,6 +70,40 @@ public abstract class Student extends Actor
         mySeatX=getX();
         mySeatY=getY();
     }
+
+    /** Description of myMethod(int a, String b)
+    * ...brief description ....
+    * 
+    * @author Dheeshik Ramachandran
+    * @author Vakshith Hemanth
+    * @author Anurag Jakkula
+    * @author Nikhil Prabu
+    * @version 1.0 Build 1 Aug 30, 2023.
+    *
+    *
+    */
+    public void jump(){
+        int originalWidth = getImage().getWidth();
+        int originalHeight = getImage().getHeight();
+        for (int i = 1; i <= 10; i++){
+            if (i != 1){
+                getImage().scale((int)(originalWidth * i), (int)(originalHeight * i));
+            }
+            turn((int)(i * 0.5));
+            Greenfoot.delay(1);;
+        }
+        for (int i = 10; i > 1; i--){
+            if (i != 1){
+                getImage().scale((int)(originalWidth * i), (int)(originalHeight * i));
+            }
+            turn((int)(i * 0.5));
+            Greenfoot.delay(1);
+        }
+        getImage().scale(originalWidth, originalHeight);
+        setRotation(0);
+        returnToSeat();
+    }
+    
 
     
  /**
@@ -164,5 +199,6 @@ public void epicDanceMove() {
 
     }
  
+
 }
 }
