@@ -103,7 +103,7 @@ public class Classroom extends World
         StudentDesk studentdesk32 = new StudentDesk();
         addObject(studentdesk32,6,10);
         TeacherDesk teacherdesk = new TeacherDesk();
-        addObject(teacherdesk,2,9);
+        addObject(teacherdesk,2,10);
         studentdesk31.setDeskGroup(1);
         studentdesk29.setDeskGroup(1);
         studentdesk30.setDeskGroup(1);
@@ -149,14 +149,29 @@ public class Classroom extends World
  // Each student needs to create their specific instance following the KilgoreTrout example.
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
+
+        SiddhiAnanya siddhiananya = new SiddhiAnanya();
+        addObject(siddhiananya,9,4);
+        siddhiananya.assignSeat();
+
+        JasmineSabharwal jasminesabharwal = new JasmineSabharwal();
+        addObject(jasminesabharwal,6,7);
+          
+        jasminesabharwal.assignSeat();
         
+
+        DheeshikRamachandran dheeshikRamachandran = new DheeshikRamachandran();
+        addObject(dheeshikRamachandran,5,4);
+        dheeshikRamachandran.assignSeat();
+  
+
         AkshitMakkar akshitmakkar = new AkshitMakkar();
         addObject(akshitmakkar,5,7);
         akshitmakkar.assignSeat();
        
        
         AnuragJakkula anuragjakkula = new AnuragJakkula();
-        addObject(anuragjakkula, 8,7);
+        addObject(anuragjakkula, 6,4);
         anuragjakkula.assignSeat();
 
         
@@ -183,7 +198,18 @@ public class Classroom extends World
         addObject(aidanspies, 5, 10);
         aidanspies.assignSeat();
 
-  
+        //KilgoreTrout kilgoretrout = new KilgoreTrout();
+        //addObject(kilgoretrout,2,3);
+        //kilgoretrout.assignSeat();
+        
+        VishnuD vishnud = new VishnuD();
+        addObject(vishnud,8,7);
+        vishnud.assignSeat();
+
+        AlessandraYu alessandrayu = new AlessandraYu();
+        addObject(alessandrayu,2,7);
+        alessandrayu.assignSeat();
+
         RamanArora ramanarora = new RamanArora();
         addObject(ramanarora,9,7);
         ramanarora.assignSeat();
@@ -202,6 +228,11 @@ public class Classroom extends World
         SamikaSripathi samikasripathi = new SamikaSripathi();
         addObject(samikasripathi,3,4);
         samikasripathi.assignSeat();
+        
+        ChandiniChennakesavan chandinichennakesavan = new ChandiniChennakesavan();
+        addObject(chandinichennakesavan,9,10);
+        chandinichennakesavan.assignSeat();
+
 
 
     }

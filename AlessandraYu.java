@@ -1,15 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.util.Random;
-/**
- * Write a description of class VakshithHemanth here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 
-public class VakshithHemanth extends Student implements SpecialInterestOrHobby
+/**
+ * Write a description of class AlessandraYu here.
+ * 
+ * @Alessandra Yu (your name) 
+ * @08/22/2023 (a version number or a date)
+ */
+public class AlessandraYu extends Student implements StudentAthlete
 {
-Random random = new Random();
     /**
      * Constructor for the KilgoreTrout class.
      * Constructors are special methods with the same exact name as the class name.  
@@ -22,13 +20,13 @@ Random random = new Random();
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public VakshithHemanth(String f, String l, int r, int s) {
+    public AlessandraYu(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
-        mySeatX=r+2;
-        mySeatY=s+2;
-        portraitFile=f.toLowerCase()+l.toLowerCase()+".png";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
-        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+".png";
+        mySeatX=r;
+        mySeatY=s;
+        portraitFile=f.toLowerCase()+l.toLowerCase()+".jpg";    // Make sure to name your image files firstlast.jpg, all lowercase!!!
+        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=f.toLowerCase()+l.toLowerCase()+".wav";  // Make sure to name your sound files firstlast.wav, all lowercase!!!
         setImage(portraitFile);
         sitting=true;
@@ -38,15 +36,15 @@ Random random = new Random();
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public VakshithHemanth() {
-        firstName="Vakshith";
-        lastName="Hemanth";
-        mySeatX=1+3;
-        mySeatY=1-3;
-        //imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".png";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".png";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+".png";
-        soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
+    public AlessandraYu() {
+        firstName="Alessandra";
+        lastName="Yu";
+        mySeatX=2;
+        mySeatY=7;
+       // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
+       portraitFile=firstName.toLowerCase() + lastName.toLowerCase()+".jpg"; 
+       standingFile=firstName.toLowerCase() + lastName.toLowerCase()+"-standing.jpg";
+        soundFile=firstName.toLowerCase()+lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;
     }
@@ -61,26 +59,20 @@ Random random = new Random();
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;
-                setImage("vakshithhemanth.png");
+                setImage(standingFile);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
                 sayName(soundFile);
             
-                myHobby("my picture is going to breakdance");
+                mySport("I'm a Cross Country runner!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
             
-                breakdance();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
+                runAround();  // Kilgore Trount's special method... Please write one of your own. You can use this, but please modify it and be creative.
            
                 sitDown();
-            
-        
             }
-        //group function
-        if (Greenfoot.isKeyDown("D")){
-            jump();
-}
         
     } 
     
@@ -88,7 +80,7 @@ Random random = new Random();
      * Prints the first and last name to the console
      */
     public void getName(){
-        System.out.println("Hey I'm " + firstName + " " + lastName);
+        System.out.println("My name is " + firstName + " " + lastName);
     }
     /**
      * This method needs to allow the user to interact with the student through a question and answer interface, and provide
@@ -102,23 +94,62 @@ Random random = new Random();
      * This is a local method specific to the KilgoreTrout class used to animate the character once the image is clicked on.
      * You should write your own methods to perform your own animation for your character/avatar.
      */
-    
-    public void breakdance(){
-        for (int i=0;i<=35;i++){
-          setLocation(random.nextInt(10),random.nextInt(10));
-          turn(15);
-          Greenfoot.delay(7);
+    public void runAround(){
+        // suggested: change image & resize
+        setLocation(2,7); // 5, 11
+        Greenfoot.delay(5);
         
+        // repeats 3 times, going faster each time
+        for (int j=5; j>=3; j--) {
+            // move Forward
+            for (int i=7;i<=11;i++){
+                setLocation(1,i);
+                Greenfoot.delay(j);
+            }   
+            turn(180);
+
+            // move right
+            for (int i=2;i<=10;i++){
+                setLocation(i,11);
+                Greenfoot.delay(j);
+            }
+            
+            // move back
+            for (int i=11;i>=2;i--){
+                setLocation(10,i);
+                Greenfoot.delay(j);
+            }      
+            
+            turn(180);
+            
+            // move left
+            for (int i=10;i>=1;i--){
+                setLocation(i,2);
+                Greenfoot.delay(j);
+            }     
+            
+            for (int i=2;i<=7;i++){
+                setLocation(1,i);
+                Greenfoot.delay(j);
+            }   
+            
         }
-        turn(180);
         
+        // spins in a 360 degree circle
+        for (int i = 0; i < 18; i ++) {
+            turn(20);
+            Greenfoot.delay(1);
+        }
+        
+        Greenfoot.delay(5);
+        returnToSeat();
+    }
      /**
      * myHobby is one of the interfaces provided.  
      * An interface is just a contract for the methods that you will implement in your code.  The College Board no longer
      * tests on abstract classes and interfaces, but it is good to know about them
      */
-}
-     public void myHobby(String s) {
+     public void mySport(String s) {
          System.out.println(s);
 }
 

@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
+import java.lang.Math;
 /**
  * Write a description of class Student here.
  * 
@@ -23,7 +24,7 @@ public abstract class Student extends Actor
    public String standingFile; // image used when standing
    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
    Classroom clas = (Classroom) getWorld();
-   public void setSeatX(int r){
+    public void setSeatX(int r){
        mySeatX=r;
     }
     
@@ -70,6 +71,40 @@ public abstract class Student extends Actor
         mySeatY=getY();
     }
 
+    /** Description of jump()
+    * Makes the members of the group jump/get larger, and spin.
+    * 
+    * @author Dheeshik Ramachandran
+    * @author Vakshith Hemanth
+    * @author Anurag Jakkula
+    * @author Nikhil Prabu
+    * @version 1.0 Build 1 Aug 30, 2023.
+    *
+    *
+    */
+    public void jump(){
+        int originalWidth = getImage().getWidth();
+        int originalHeight = getImage().getHeight();
+        for (int i = 1; i <= 10; i++){
+            if (i != 1){
+                getImage().scale((int)(originalWidth * i), (int)(originalHeight * i));
+            }
+            turn((int)(i * 0.5));
+            Greenfoot.delay(1);;
+        }
+        for (int i = 10; i > 1; i--){
+            if (i != 1){
+                getImage().scale((int)(originalWidth * i), (int)(originalHeight * i));
+            }
+            turn((int)(i * 0.5));
+            Greenfoot.delay(1);
+        }
+        getImage().scale(originalWidth, originalHeight);
+        setRotation(0);
+        returnToSeat();
+    }
+    
+
     
  /**
  * Description of epicDanceMove()
@@ -93,11 +128,6 @@ public void epicDanceMove() {
         // Turn 30 degrees
         turn(30);
         Greenfoot.delay(5);
-
-        // Change the image to a random color (assuming you have a method to do this)
-        //changeRandomColor();
-        Greenfoot.delay(5);
-
         // Resize the image to 1.5x its original dimensions
         getImage().scale((int)(originalWidth * 1.5), (int)(originalHeight * 1.5));
         Greenfoot.delay(5);
@@ -106,12 +136,13 @@ public void epicDanceMove() {
         turn(-30);
         Greenfoot.delay(5);
 
-        // Restore the image to its original dimensions and color
+        // Restore the image to its original dimensions
+        // Note: Removed the resetColor() line
         getImage().scale(originalWidth, originalHeight);
-        //resetColor();
         Greenfoot.delay(5);
     }
 }
+
     /** Description of disco()
  * The disco method makes the student do a dance where they shake, increase and decrease size, and change transparency
  * 
@@ -184,5 +215,6 @@ public void epicDanceMove() {
 
     }
  
+
 }
 
