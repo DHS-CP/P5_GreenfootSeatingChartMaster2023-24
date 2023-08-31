@@ -162,9 +162,9 @@ public class Classroom extends World
 
 
 
-        KilgoreTrout kilgoretrout = new KilgoreTrout();
-        addObject(kilgoretrout,2,3);
-        kilgoretrout.assignSeat();
+        //KilgoreTrout kilgoretrout = new KilgoreTrout();
+        //addObject(kilgoretrout,2,3);
+        //kilgoretrout.assignSeat();
         
         VakshithHemanth vakshithhemanth = new VakshithHemanth();
         addObject(vakshithhemanth, 6,3);
@@ -184,6 +184,11 @@ public class Classroom extends World
         MohitVarikuti mohitvarikuti = new MohitVarikuti();
         addObject(mohitvarikuti, 2, 3);
         mohitvarikuti.assignSeat();
+        
+                
+        SamikaSripathi samikasripathi = new SamikaSripathi();
+        addObject(samikasripathi,3,4);
+        samikasripathi.assignSeat();
 
     }
     
