@@ -70,6 +70,40 @@ public abstract class Student extends Actor
         mySeatX=getX();
         mySeatY=getY();
     }
+
+    
+    
+    /** Description of disco()
+ * The disco method makes the student do a dance where they shake, increase and decrease size, and change transparency
+ * 
+ * @author Aditya D
+ * @author Raman A
+ * @author Conrad A
+ * @author Vishnu D
+ * @version 1.0z Build 9000 Aug 30, 2023.
+ */
+    public void disco() {
+        
+        for (int i=0; i <=15; i++){
+            int originalWidth = getImage().getWidth();
+            int originalHeight = getImage().getHeight();
+            setRotation(15);
+            getImage().setTransparency(255);
+            Greenfoot.delay(10);
+            getImage().scale(originalWidth*2,originalWidth*2);
+            Greenfoot.delay(10);
+            getImage().scale(originalWidth,originalHeight);
+            Greenfoot.delay(10);
+            setRotation(-15);
+            Greenfoot.delay(10);
+            getImage().scale(originalWidth*2,originalWidth*2);
+            Greenfoot.delay(10);
+            getImage().scale(originalWidth,originalHeight);
+            Greenfoot.delay(10);
+            getImage().setTransparency(0);
+            Greenfoot.delay(10);
+        }
+    }
     /*
      * doABarrelRoll() will cause a student object to do a barrel roll forwards and backwards. 
      * This can be used during the animation when a student is clicked on.  
@@ -88,6 +122,8 @@ public abstract class Student extends Actor
             turn(-45);
             Greenfoot.delay(7);
         }
+
     }
  
+}
 }
