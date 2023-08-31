@@ -69,7 +69,7 @@ public class NikhilPrabhu extends Student implements SpecialInterestOrHobby
                 getName();
                 sayName(soundFile);
             
-                myHobby("I like to play basketball!");
+                myHobby("My favorite sport to watch is football");
             
                 nikhilMove();  //my special method 
        
