@@ -19,6 +19,7 @@ public abstract class Student extends Actor
    public boolean sitting;   // Is the student sitting or standing (default sitting)                         
    
  //  public String imgFile;   // These will be created in subclass as firstName.toLowerCase()+
+
    public String portraitFile; // image used when sitting
    public String standingFile; // image used when standing
    public String soundFile; //      firstName.toLowerCase()+lastName.toLowerCase()+".ext"; (.wav or .jpg)
@@ -32,7 +33,7 @@ public abstract class Student extends Actor
     }
     
     public abstract void  getName(); //This is an abstract methods. You will have to implement it
-                                     // in your own class file. See KilgoreTrout for an example
+                                     
  
     /**
      * Plays a sound file when called
@@ -60,8 +61,8 @@ public abstract class Student extends Actor
     public void returnToSeat(){
         setLocation(mySeatX,mySeatY);
     }
+    
     public void sitDown(){
-        returnToSeat();
         setImage(portraitFile);
         sitting=true;
     }
@@ -69,6 +70,7 @@ public abstract class Student extends Actor
         mySeatX=getX();
         mySeatY=getY();
     }
+
     
     
     /** Description of disco()
@@ -100,6 +102,27 @@ public abstract class Student extends Actor
             Greenfoot.delay(10);
             getImage().setTransparency(0);
             Greenfoot.delay(10);
+        }
+    }
+    /*
+     * doABarrelRoll() will cause a student object to do a barrel roll forwards and backwards. 
+     * This can be used during the animation when a student is clicked on.  
+     * Created by Tharun Selvakumar, Sid Mathur, Aidan Spies, and Himanshu M.
+     */
+    public void doABarrelRoll(){
+        for(int i = 0; i < 8; i++){
+            setLocation(this.getX() + 1, this.getY());
+            //Greenfoot.delay(1);
+            turn(45);
+            Greenfoot.delay(7);
+        }
+        for(int i = 0; i < 8; i++){
+            setLocation(this.getX() - 1, this.getY()); 
+            //Greenfoot.delay(1);
+            turn(-45);
+            Greenfoot.delay(7);
+        }
+
     }
  
 }

@@ -8,7 +8,8 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-
+//import java.util.List;
+//import java.util.Arrays;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
@@ -102,7 +103,7 @@ public class Classroom extends World
         StudentDesk studentdesk32 = new StudentDesk();
         addObject(studentdesk32,6,10);
         TeacherDesk teacherdesk = new TeacherDesk();
-        addObject(teacherdesk,2,9);
+        addObject(teacherdesk,2,10);
         studentdesk31.setDeskGroup(1);
         studentdesk29.setDeskGroup(1);
         studentdesk30.setDeskGroup(1);
@@ -155,7 +156,49 @@ public class Classroom extends World
         AdityaDas adityadas = new AdityaDas();
         addObject(adityadas, 8, 6);
         adityadas.assignSeat();
+
+
+        
+        NikhilPrabhu nikhilprabhu = new NikhilPrabhu();
+        addObject(nikhilprabhu,5,3);
+        nikhilprabhu.assignSeat();
+
   
+
+        // KilgoreTrout kilgoretrout = new KilgoreTrout();
+        // addObject(kilgoretrout,2,3);
+        // kilgoretrout.assignSeat();
+
+
+
+        //KilgoreTrout kilgoretrout = new KilgoreTrout();
+        //addObject(kilgoretrout,2,3);
+        //kilgoretrout.assignSeat();
+        
+        VakshithHemanth vakshithhemanth = new VakshithHemanth();
+        addObject(vakshithhemanth, 6,3);
+        vakshithhemanth.assignSeat();
+        
+        AidanSpies aidanspies = new AidanSpies();
+        addObject(aidanspies, 5, 10);
+        aidanspies.assignSeat();
+
+  
+        RamanArora ramanarora = new RamanArora();
+        addObject(ramanarora,9,7);
+        ramanarora.assignSeat();
+        TharunSelvakumar tharunselvakumar = new TharunSelvakumar();
+        addObject(tharunselvakumar,5,9);
+        tharunselvakumar.assignSeat();
+        MohitVarikuti mohitvarikuti = new MohitVarikuti();
+        addObject(mohitvarikuti, 2, 3);
+        mohitvarikuti.assignSeat();
+        
+                
+        SamikaSripathi samikasripathi = new SamikaSripathi();
+        addObject(samikasripathi,3,4);
+        samikasripathi.assignSeat();
+
     }
     
     public List<Student> getAllStudents(){
