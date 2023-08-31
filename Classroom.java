@@ -8,8 +8,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-//import java.util.List;
-//import java.util.Arrays;
+
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
@@ -143,67 +142,20 @@ public class Classroom extends World
      * That is: create the initial objects and add them to the world.
      */
     
-    private void prepare()
+    public void prepare()
     {
         createDeskLayout();
  // Each student needs to create their specific instance following the KilgoreTrout example.
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
-
         KilgoreTrout kilgoretrout = new KilgoreTrout();
-        addObject(kilgoretrout,2,3);
+        addObject(kilgoretrout,6,6);
         kilgoretrout.assignSeat();
-       
-       
-        AnuragJakkula anuragjakkula = new AnuragJakkula();
-        addObject(anuragjakkula, 8,7);
-        anuragjakkula.assignSeat();
-
         
-        AdityaDas adityadas = new AdityaDas();
-        addObject(adityadas, 8, 6);
-        adityadas.assignSeat();
-
-
-        NikhilPrabhu nikhilprabhu = new NikhilPrabhu();
-        addObject(nikhilprabhu,5,3);
-        nikhilprabhu.assignSeat();
-
-        ShivaniSridhar shivanisridhar = new ShivaniSridhar();
-        addObject(shivanisridhar,3,3);
-        shivanisridhar.assignSeat();
-        
-        
-        VakshithHemanth vakshithhemanth = new VakshithHemanth();
-        addObject(vakshithhemanth, 6,3);
-        vakshithhemanth.assignSeat();
-
-        
-        AidanSpies aidanspies = new AidanSpies();
-        addObject(aidanspies, 5, 10);
-        aidanspies.assignSeat();
-
+        ArunachalamKasi ak = new ArunachalamKasi();
+        addObject(ak,6,6);
+        ak.assignSeat();
   
-        RamanArora ramanarora = new RamanArora();
-        addObject(ramanarora,9,7);
-        ramanarora.assignSeat();
-        
-        
-        TharunSelvakumar tharunselvakumar = new TharunSelvakumar();
-        addObject(tharunselvakumar,5,9);
-        tharunselvakumar.assignSeat();
-        
-        
-        MohitVarikuti mohitvarikuti = new MohitVarikuti();
-        addObject(mohitvarikuti, 2, 3);
-        mohitvarikuti.assignSeat();
-        
-                
-        SamikaSripathi samikasripathi = new SamikaSripathi();
-        addObject(samikasripathi,3,4);
-        samikasripathi.assignSeat();
-
-
     }
     
     public List<Student> getAllStudents(){
@@ -235,6 +187,7 @@ public class Classroom extends World
             appendFile(newChartFile,instantiate);
             appendFile(newChartFile,placeStudent);  
             appendFile(newChartFile,assignSeat);
+            System.out.println(s);
             
         }
         Greenfoot.ask("Your file has been saved as: "+newChartFile+"     -Press [Enter] to continue.");
