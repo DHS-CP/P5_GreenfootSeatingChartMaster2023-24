@@ -151,11 +151,16 @@ public class Classroom extends World
  // and then clicking on the inspect text
 
         
+        AdityaDas adityadas = new AdityaDas();
+        addObject(adityadas, 8, 6);
+        adityadas.assignSeat();
+
+
+        
         NikhilPrabhu nikhilprabhu = new NikhilPrabhu();
         addObject(nikhilprabhu,5,3);
         nikhilprabhu.assignSeat();
-        
- 
+
         // KilgoreTrout kilgoretrout = new KilgoreTrout();
         // addObject(kilgoretrout,2,3);
         // kilgoretrout.assignSeat();
@@ -169,9 +174,15 @@ public class Classroom extends World
         //addObject(kilgoretrout,2,3);
         //kilgoretrout.assignSeat();
         
+        VakshithHemanth vakshithhemanth = new VakshithHemanth();
+        addObject(vakshithhemanth, 6,3);
+        vakshithhemanth.assignSeat();
+
+        
         AidanSpies aidanspies = new AidanSpies();
         addObject(aidanspies, 5, 10);
         aidanspies.assignSeat();
+
   
         RamanArora ramanarora = new RamanArora();
         addObject(ramanarora,9,7);
@@ -182,6 +193,11 @@ public class Classroom extends World
         MohitVarikuti mohitvarikuti = new MohitVarikuti();
         addObject(mohitvarikuti, 2, 3);
         mohitvarikuti.assignSeat();
+        
+                
+        SamikaSripathi samikasripathi = new SamikaSripathi();
+        addObject(samikasripathi,3,4);
+        samikasripathi.assignSeat();
 
     }
     
