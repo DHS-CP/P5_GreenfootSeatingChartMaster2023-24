@@ -151,6 +151,13 @@ public class Classroom extends World
  // and then clicking on the inspect text
 
 
+
+
+        ArunachalamKasi ak = new ArunachalamKasi();
+        addObject(ak,6,6);
+        ak.assignSeat();
+     
+
         SiddhiAnanya siddhiananya = new SiddhiAnanya();
         addObject(siddhiananya,9,4);
         siddhiananya.assignSeat();
