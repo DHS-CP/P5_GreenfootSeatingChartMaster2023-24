@@ -1,4 +1,4 @@
-
+﻿
 PROJECT TITLE: AP CSA Assignment 1 (An interactive seating chart using Greenfoot)
 
 PURPOSE OF PROJECT: The purpose of this assignment is to visually work with classes and subclasses, abstract classes, and interfaces, and to familiarize yourself with the basics of the GIT command line.  As a side effect, it will help your instructor learn your names!
@@ -11,7 +11,8 @@ HOW TO START THIS PROJECT:  To start this project, assuming that you have Greenf
 AUTHORS:                    Mr. Kaehms, Dr. Schick and CSA students
 
 CONTRIBUTERS:               Kilgore Trout
-                            (We will add your name when you done ong)
+                            (Add you name here once your code 
+                             is added and correct)
 
 USER INSTRUCTIONS:
 
@@ -23,9 +24,8 @@ NOTE: Each class build-master should fork the main repo to a new repo before sta
 
 3) Clone (first time, each class build-master should fork, so that each class has their own copy) the repository into the directory where git bash is pointing:
 
-```bash
     git clone https://github.com/DHS-CP/GreenfootSeatingChartMaster2023-24.git  (this will change based on fork created by build-master(s).
-```
+
 NOTE: This should set up all initial conditions for GIT and avoid a lot of confusion.
 
 4) Open the greenfoot project file from within greenfoot and start editing.
@@ -35,11 +35,9 @@ NOTE: This should set up all initial conditions for GIT and avoid a lot of confu
 PLEASE DO NOT COMMIT YOUR FILES IF THEY DO NOT COMPILE LOCALLY!!!!! Work with your build master! I will provide the current version of the seating chart in Canvas, so that you know where you should be seated.
 =====================================================================
 
-```bash
 git add FirstLast.java
 git add images/firstlast.jpg
 git add sounds/firstlast.wav
-```
 
 (Files are case sensitive!!!)
 
@@ -73,3 +71,7 @@ when making your .wav file, as this assignment will be used to learn correct pro
 must particpate in a Canvas online discussion on workflows that will be posted as an assignment.
 
 See the Canvas instructions for a complete set of requirements for this year's project.
+
+
+
+

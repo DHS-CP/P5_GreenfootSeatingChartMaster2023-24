@@ -11,7 +11,6 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
 {
 
     /**
-     * Hello world
      * Constructor for the KilgoreTrout class.
      * Constructors are special methods with the same exact name as the class name.  
      * Constructors to not have return types.

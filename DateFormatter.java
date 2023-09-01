@@ -1,6 +1,11 @@
     import java.time.format.DateTimeFormatter;  
     import java.time.LocalDateTime;   
- 
+    /**
+ * Write a description of class DateFormatter here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
 public class DateFormatter  {
 
       public static String makeDate() {    
