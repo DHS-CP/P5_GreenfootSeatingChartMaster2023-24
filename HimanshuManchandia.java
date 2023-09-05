@@ -44,8 +44,8 @@ public class HimanshuManchandia extends Student implements SpecialInterestOrHobb
         mySeatX=1;
         mySeatY=1;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
-       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
+       portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".png";
+       standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.png";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
         setImage(portraitFile);
         sitting=true;

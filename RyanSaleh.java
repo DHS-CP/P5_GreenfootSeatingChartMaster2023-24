@@ -58,7 +58,7 @@ public class RyanSaleh extends Student
     {
         // Add your action code here.
         Actor soccerball;
-        soccerball = getOneObjectAtOffset(0, 0, soccerball.class);
+        //soccerball = getOneObjectAtOffset(0, 0, soccerball.class);
         world = getWorld();
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
@@ -70,12 +70,12 @@ public class RyanSaleh extends Student
                 
                 animationf();
                 animations();
-                world.addObject(new soccerball(), 10, 1);
                 //world.addObject(new soccerball(), 10, 1);
-                if (soccerball != null) {
+                //world.addObject(new soccerball(), 10, 1);
+                //if (soccerball != null) {
                     //.addObject(new soccerball(), 10, 1);
-                    world.removeObject(soccerball);
-                }
+                    //world.removeObject(soccerball);
+                //}
                 //animationb();
               
                 
