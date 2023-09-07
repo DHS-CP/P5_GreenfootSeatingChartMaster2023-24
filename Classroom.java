@@ -8,8 +8,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-//import java.util.List;
-//import java.util.Arrays;
+
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
@@ -103,7 +102,7 @@ public class Classroom extends World
         StudentDesk studentdesk32 = new StudentDesk();
         addObject(studentdesk32,6,10);
         TeacherDesk teacherdesk = new TeacherDesk();
-        addObject(teacherdesk,2,10);
+        addObject(teacherdesk,2,9);
         studentdesk31.setDeskGroup(1);
         studentdesk29.setDeskGroup(1);
         studentdesk30.setDeskGroup(1);
@@ -154,6 +153,10 @@ public class Classroom extends World
         addObject(ayushb,9,9);
         ayushb.assignSeat();
 
+
+        PhillipChu kilgoretrout = new PhillipChu();
+        addObject(kilgoretrout,9,4);
+        kilgoretrout.assignSeat();
 
         KrishnaEduri krishnaeduri = new KrishnaEduri();
         addObject(krishnaeduri,8,9);
@@ -271,6 +274,7 @@ public class Classroom extends World
 
 
 
+>>>>>>> master
     }
     
     public List<Student> getAllStudents(){

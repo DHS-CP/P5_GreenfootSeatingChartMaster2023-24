@@ -22,6 +22,4 @@ public class StudentDeskGroup extends Actor
     {
         // Add your action code here.
     }    
-    
-    
 }
