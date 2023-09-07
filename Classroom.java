@@ -173,7 +173,7 @@ public class Classroom extends World
         jonathanadrian.assignSeat();
 
         HimanshuManchandia himanshumanchandia = new HimanshuManchandia();
-        addObject(himanshumanchandia,2,3);
+        addObject(himanshumanchandia,6,9);
         himanshumanchandia.assignSeat();
 
 
