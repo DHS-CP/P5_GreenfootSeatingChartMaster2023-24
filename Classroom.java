@@ -206,7 +206,7 @@ x
   
 
         AkshitMakkar akshitmakkar = new AkshitMakkar();
-        addObject(akshitmakkar,5,7);
+        addObject(akshitmakkar,5,6);
         akshitmakkar.assignSeat();
        
        
