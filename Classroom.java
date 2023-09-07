@@ -180,7 +180,7 @@ public class Classroom extends World
         ArunachalamKasi ak = new ArunachalamKasi();
         addObject(ak,6,6);
         ak.assignSeat();
-x
+
         PrajwalDacharla prajwaldacharla = new PrajwalDacharla();
         addObject(prajwaldacharla,8,4);
         prajwaldacharla.assignSeat();
@@ -192,10 +192,13 @@ x
 
         JasmineSabharwal jasminesabharwal = new JasmineSabharwal();
         addObject(jasminesabharwal,6,7);
-          
         jasminesabharwal.assignSeat();
         
 
+        EricXiao ericxiao = new EricXiao();
+        addObject(ericxiao, 2, 4);
+        ericxiao.assignSeat();
+        
         DheeshikRamachandran dheeshikRamachandran = new DheeshikRamachandran();
         addObject(dheeshikRamachandran,5,4);
         dheeshikRamachandran.assignSeat();
@@ -206,7 +209,7 @@ x
   
 
         AkshitMakkar akshitmakkar = new AkshitMakkar();
-        addObject(akshitmakkar,5,7);
+        addObject(akshitmakkar,5,6);
         akshitmakkar.assignSeat();
        
        
