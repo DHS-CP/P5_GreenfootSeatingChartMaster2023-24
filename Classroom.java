@@ -180,8 +180,7 @@ public class Classroom extends World
         ArunachalamKasi ak = new ArunachalamKasi();
         addObject(ak,6,6);
         ak.assignSeat();
-
-     
+x
         PrajwalDacharla prajwaldacharla = new PrajwalDacharla();
         addObject(prajwaldacharla,8,4);
         prajwaldacharla.assignSeat();
