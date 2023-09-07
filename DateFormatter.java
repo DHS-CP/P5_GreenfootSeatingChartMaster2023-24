@@ -1,4 +1,3 @@
-
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime;   
     /**
@@ -7,7 +6,6 @@ import java.time.LocalDateTime;
  * @author (your name) 
  * @version (a version number or a date)
  */
->>>>>>> master
 public class DateFormatter  {
 
       public static String makeDate() {    
