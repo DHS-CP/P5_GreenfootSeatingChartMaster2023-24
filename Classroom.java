@@ -173,6 +173,11 @@ public class Classroom extends World
         ArunachalamKasi ak = new ArunachalamKasi();
         addObject(ak,6,6);
         ak.assignSeat();
+
+     
+        PrajwalDacharla prajwaldacharla = new PrajwalDacharla();
+        addObject(prajwaldacharla,8,4);
+        prajwaldacharla.assignSeat();
      
 
         SiddhiAnanya siddhiananya = new SiddhiAnanya();
