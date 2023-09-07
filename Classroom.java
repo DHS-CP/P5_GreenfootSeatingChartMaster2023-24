@@ -142,41 +142,16 @@ public class Classroom extends World
      * That is: create the initial objects and add them to the world.
      */
     
-    private void prepare()
+    public void prepare()
     {
         createDeskLayout();
  // Each student needs to create their specific instance following the KilgoreTrout example.
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
         
-        AyushBatghare ayushb = new AyushBatghare();
-        addObject(ayushb,9,9);
-        ayushb.assignSeat();
-
-
-        PhillipChu kilgoretrout = new PhillipChu();
-        addObject(kilgoretrout,9,4);
-        kilgoretrout.assignSeat();
-
-        KrishnaEduri krishnaeduri = new KrishnaEduri();
-        addObject(krishnaeduri,8,9);
-        krishnaeduri.assignSeat();
-
-
-        
-        JonathanAdrian jonathanadrian = new JonathanAdrian();
-        addObject(jonathanadrian, 9, 3);
-        jonathanadrian.assignSeat();
-
-        HimanshuManchandia himanshumanchandia = new HimanshuManchandia();
-        addObject(himanshumanchandia,2,3);
-        himanshumanchandia.assignSeat();
-
-
         ArunachalamKasi ak = new ArunachalamKasi();
         addObject(ak,6,6);
         ak.assignSeat();
-     
 
         SiddhiAnanya siddhiananya = new SiddhiAnanya();
         addObject(siddhiananya,9,4);
@@ -306,6 +281,7 @@ public class Classroom extends World
             appendFile(newChartFile,instantiate);
             appendFile(newChartFile,placeStudent);  
             appendFile(newChartFile,assignSeat);
+            System.out.println(s);
             
         }
         Greenfoot.ask("Your file has been saved as: "+newChartFile+"     -Press [Enter] to continue.");
