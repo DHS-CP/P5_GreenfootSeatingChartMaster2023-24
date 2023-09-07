@@ -290,7 +290,14 @@ public class Classroom extends World
         ChandiniChennakesavan chandinichennakesavan = new ChandiniChennakesavan();
         addObject(chandinichennakesavan,9,10);
         chandinichennakesavan.assignSeat();
-
+        
+        AniszewskiSky aniszewskisky = new AniszewskiSky();
+        addObject(aniszewskisky,9,6);
+        aniszewskisky.assignSeat();
+        
+        SuriyaGnanasundar suriyagnanasundar = new SuriyaGnanasundar();
+        addObject(suriyagnanasundar,8,10);
+        suriyagnanasundar.assignSeat();
 
 
     }
