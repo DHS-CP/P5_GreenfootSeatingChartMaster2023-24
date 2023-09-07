@@ -298,6 +298,10 @@ public class Classroom extends World
         SuriyaGnanasundar suriyagnanasundar = new SuriyaGnanasundar();
         addObject(suriyagnanasundar,8,10);
         suriyagnanasundar.assignSeat();
+        
+        PhillipChu phillipchu = new PhillipChu();
+        addObject(phillipchu,8,3);
+        phillipchu.assignSeat();
 
 
     }
