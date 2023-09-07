@@ -8,8 +8,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-//import java.util.List;
-//import java.util.Arrays;
+
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  
 /**
@@ -143,7 +142,7 @@ public class Classroom extends World
      * That is: create the initial objects and add them to the world.
      */
     
-    private void prepare()
+    public void prepare()
     {
         createDeskLayout();
  // Each student needs to create their specific instance following the KilgoreTrout example.
@@ -185,6 +184,7 @@ public class Classroom extends World
             appendFile(newChartFile,instantiate);
             appendFile(newChartFile,placeStudent);  
             appendFile(newChartFile,assignSeat);
+            System.out.println(s);
             
         }
         Greenfoot.ask("Your file has been saved as: "+newChartFile+"     -Press [Enter] to continue.");
