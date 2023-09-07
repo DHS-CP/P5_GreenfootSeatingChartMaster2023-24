@@ -146,6 +146,12 @@ public class Classroom extends World
     public void prepare()
     {
         createDeskLayout();
+
+        
+        KevinTend kevintend = new KevinTend();
+        addObject(kevintend, 3, 7);
+        kevintend.assignSeat();
+        
  // Each student needs to create their specific instance following the KilgoreTrout example.
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
