@@ -143,21 +143,149 @@ public class Classroom extends World
      * That is: create the initial objects and add them to the world.
      */
     
-    private void prepare()
+    public void prepare()
     {
         createDeskLayout();
-     // Each student needs to create their specific instance following the KilgoreTrout example.
-     // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
-     // and then clicking on the inspect text
-        KilgoreTrout kilgoretrout = new KilgoreTrout();
-        addObject(kilgoretrout,2,3);
-        kilgoretrout.assignSeat();
+
         
         KevinTend kevintend = new KevinTend();
         addObject(kevintend, 3, 7);
         kevintend.assignSeat();
         
+ // Each student needs to create their specific instance following the KilgoreTrout example.
+ // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
+ // and then clicking on the inspect text
+
+        
+        AyushBatghare ayushb = new AyushBatghare();
+        addObject(ayushb,9,9);
+        ayushb.assignSeat();
+
+
+        KrishnaEduri krishnaeduri = new KrishnaEduri();
+        addObject(krishnaeduri,8,9);
+        krishnaeduri.assignSeat();
+
+
+        
+        JonathanAdrian jonathanadrian = new JonathanAdrian();
+        addObject(jonathanadrian, 9, 3);
+        jonathanadrian.assignSeat();
+
+        HimanshuManchandia himanshumanchandia = new HimanshuManchandia();
+        addObject(himanshumanchandia,2,3);
+        himanshumanchandia.assignSeat();
+
+
+        ArunachalamKasi ak = new ArunachalamKasi();
+        addObject(ak,6,6);
+        ak.assignSeat();
+     
+
+        SiddhiAnanya siddhiananya = new SiddhiAnanya();
+        addObject(siddhiananya,9,4);
+        siddhiananya.assignSeat();
+
+        JasmineSabharwal jasminesabharwal = new JasmineSabharwal();
+        addObject(jasminesabharwal,6,7);
+          
+        jasminesabharwal.assignSeat();
+        
+
+        DheeshikRamachandran dheeshikRamachandran = new DheeshikRamachandran();
+        addObject(dheeshikRamachandran,5,4);
+        dheeshikRamachandran.assignSeat();
+
+        SidhantMathur sidhantmathur = new SidhantMathur();
+        addObject(sidhantmathur, 6, 10);
+        sidhantmathur.assignSeat();
   
+
+        AkshitMakkar akshitmakkar = new AkshitMakkar();
+        addObject(akshitmakkar,5,7);
+        akshitmakkar.assignSeat();
+       
+       
+        AnuragJakkula anuragjakkula = new AnuragJakkula();
+        addObject(anuragjakkula, 6,4);
+        anuragjakkula.assignSeat();
+
+        RyanSaleh ryansaleh = new RyanSaleh();
+        addObject(ryansaleh, 5, 7);
+        ryansaleh.assignSeat();
+        
+        AdityaDas adityadas = new AdityaDas();
+        addObject(adityadas, 8, 6);
+        adityadas.assignSeat();
+
+
+        NikhilPrabhu nikhilprabhu = new NikhilPrabhu();
+        addObject(nikhilprabhu,5,3);
+        nikhilprabhu.assignSeat();
+        
+        
+        DanielYawar danielyawar = new DanielYawar();
+        addObject(danielyawar,2,6);
+        danielyawar.assignSeat();
+
+
+        ShivaniSridhar shivanisridhar = new ShivaniSridhar();
+        addObject(shivanisridhar,3,3);
+        shivanisridhar.assignSeat();
+        
+
+        
+        VakshithHemanth vakshithhemanth = new VakshithHemanth();
+        addObject(vakshithhemanth, 6,3);
+        vakshithhemanth.assignSeat();
+
+        
+        AidanSpies aidanspies = new AidanSpies();
+        addObject(aidanspies, 5, 10);
+        aidanspies.assignSeat();
+
+        //KilgoreTrout kilgoretrout = new KilgoreTrout();
+        //addObject(kilgoretrout,2,3);
+        //kilgoretrout.assignSeat();
+        
+        VishnuD vishnud = new VishnuD();
+        addObject(vishnud,8,7);
+        vishnud.assignSeat();
+
+        AlessandraYu alessandrayu = new AlessandraYu();
+        addObject(alessandrayu,2,7);
+        alessandrayu.assignSeat();
+
+
+        RamanArora ramanarora = new RamanArora();
+        addObject(ramanarora,9,7);
+        ramanarora.assignSeat();
+        
+        
+        TharunSelvakumar tharunselvakumar = new TharunSelvakumar();
+        addObject(tharunselvakumar,5,9);
+        tharunselvakumar.assignSeat();
+
+        HariniSuresh harinisuresh = new HariniSuresh();
+        addObject(harinisuresh,3,6);
+        harinisuresh.assignSeat();
+
+        
+        MohitVarikuti mohitvarikuti = new MohitVarikuti();
+        addObject(mohitvarikuti, 2, 3);
+        mohitvarikuti.assignSeat();
+        
+                
+        SamikaSripathi samikasripathi = new SamikaSripathi();
+        addObject(samikasripathi,3,4);
+        samikasripathi.assignSeat();
+        
+        ChandiniChennakesavan chandinichennakesavan = new ChandiniChennakesavan();
+        addObject(chandinichennakesavan,9,10);
+        chandinichennakesavan.assignSeat();
+
+
+
     }
     
     public List<Student> getAllStudents(){
@@ -189,6 +317,7 @@ public class Classroom extends World
             appendFile(newChartFile,instantiate);
             appendFile(newChartFile,placeStudent);  
             appendFile(newChartFile,assignSeat);
+            System.out.println(s);
             
         }
         Greenfoot.ask("Your file has been saved as: "+newChartFile+"     -Press [Enter] to continue.");
