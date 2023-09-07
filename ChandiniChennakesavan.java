@@ -68,6 +68,7 @@ public class ChandiniChennakesavan extends Student implements SpecialInterestOrH
         
                 //my hobby
                 myHobby("I like to watch movies!");
+                Movies.faveMovies("Interstellar");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
             // combination of all of those types of actions, or more. Make sure to save the original image if you manipulate it, so that you can put it back.
             // Call the sitDown() method to move back  to your seat
@@ -165,6 +166,7 @@ public class ChandiniChennakesavan extends Student implements SpecialInterestOrH
      */
      public void myHobby(String s) {
          System.out.println(s);
+         
 }
 
 }
