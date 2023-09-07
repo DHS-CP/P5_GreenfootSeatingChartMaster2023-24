@@ -102,7 +102,7 @@ public class Classroom extends World
         StudentDesk studentdesk32 = new StudentDesk();
         addObject(studentdesk32,6,10);
         TeacherDesk teacherdesk = new TeacherDesk();
-        addObject(teacherdesk,2,10);
+        addObject(teacherdesk,2,9);
         studentdesk31.setDeskGroup(1);
         studentdesk29.setDeskGroup(1);
         studentdesk30.setDeskGroup(1);
@@ -166,6 +166,7 @@ public class Classroom extends World
         DheeshikRamachandran dheeshikRamachandran = new DheeshikRamachandran();
         addObject(dheeshikRamachandran,5,4);
         dheeshikRamachandran.assignSeat();
+
   
 
         AkshitMakkar akshitmakkar = new AkshitMakkar();
@@ -177,6 +178,9 @@ public class Classroom extends World
         addObject(anuragjakkula, 6,4);
         anuragjakkula.assignSeat();
 
+        RyanSaleh ryansaleh = new RyanSaleh();
+        addObject(ryansaleh, 5, 7);
+        ryansaleh.assignSeat();
         
         AdityaDas adityadas = new AdityaDas();
         addObject(adityadas, 8, 6);
@@ -186,11 +190,18 @@ public class Classroom extends World
         NikhilPrabhu nikhilprabhu = new NikhilPrabhu();
         addObject(nikhilprabhu,5,3);
         nikhilprabhu.assignSeat();
+        
+        
+        DanielYawar danielyawar = new DanielYawar();
+        addObject(danielyawar,2,6);
+        danielyawar.assignSeat();
+
 
         ShivaniSridhar shivanisridhar = new ShivaniSridhar();
         addObject(shivanisridhar,3,3);
         shivanisridhar.assignSeat();
         
+
         
         VakshithHemanth vakshithhemanth = new VakshithHemanth();
         addObject(vakshithhemanth, 6,3);

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 ﻿
 PROJECT TITLE: AP CSA Assignment 1 (An interactive seating chart using Greenfoot)
 
@@ -76,6 +79,8 @@ See the Canvas instructions for a complete set of requirements for this year's p
 
 
 
+<<<<<<< HEAD
+=======
 =======
 ﻿
 PROJECT TITLE: AP CSA Assignment 1 (An interactive seating chart using Greenfoot)
@@ -154,4 +159,5 @@ See the Canvas instructions for a complete set of requirements for this year's p
 
 
 
+>>>>>>> master
 >>>>>>> master
