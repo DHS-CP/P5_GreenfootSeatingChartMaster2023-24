@@ -57,6 +57,10 @@ public class JonathanAdrian extends Student
                 sitDown();
             }
         }
+        if(Greenfoot.isKeyDown("a"))
+        {
+            tableCultDance();
+        }
     }
     public void getName(){
         System.out.println("My name is " + firstName + " " + lastName);
@@ -141,4 +145,5 @@ public class JonathanAdrian extends Student
         setImage("jonathanadrian-reading.png");
         Greenfoot.delay(55);
     }
+
 }

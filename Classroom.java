@@ -143,24 +143,47 @@ public class Classroom extends World
      * That is: create the initial objects and add them to the world.
      */
     
-    private void prepare()
+    public void prepare()
     {
         createDeskLayout();
+
+        
+        KevinTend kevintend = new KevinTend();
+        addObject(kevintend, 3, 7);
+        kevintend.assignSeat();
+        
  // Each student needs to create their specific instance following the KilgoreTrout example.
  // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
  // and then clicking on the inspect text
+
+        
+        AyushBatghare ayushb = new AyushBatghare();
+        addObject(ayushb,9,9);
+        ayushb.assignSeat();
+
+
+        KrishnaEduri krishnaeduri = new KrishnaEduri();
+        addObject(krishnaeduri,8,9);
+        krishnaeduri.assignSeat();
+
 
         
         JonathanAdrian jonathanadrian = new JonathanAdrian();
         addObject(jonathanadrian, 9, 3);
         jonathanadrian.assignSeat();
 
-
+        HimanshuManchandia himanshumanchandia = new HimanshuManchandia();
+        addObject(himanshumanchandia,6,9);
+        himanshumanchandia.assignSeat();
 
 
         ArunachalamKasi ak = new ArunachalamKasi();
         addObject(ak,6,6);
         ak.assignSeat();
+
+        PrajwalDacharla prajwaldacharla = new PrajwalDacharla();
+        addObject(prajwaldacharla,8,4);
+        prajwaldacharla.assignSeat();
      
 
         SiddhiAnanya siddhiananya = new SiddhiAnanya();
@@ -169,18 +192,24 @@ public class Classroom extends World
 
         JasmineSabharwal jasminesabharwal = new JasmineSabharwal();
         addObject(jasminesabharwal,6,7);
-          
         jasminesabharwal.assignSeat();
         
 
+        EricXiao ericxiao = new EricXiao();
+        addObject(ericxiao, 2, 4);
+        ericxiao.assignSeat();
+        
         DheeshikRamachandran dheeshikRamachandran = new DheeshikRamachandran();
         addObject(dheeshikRamachandran,5,4);
         dheeshikRamachandran.assignSeat();
->>>>>>> master
+
+        SidhantMathur sidhantmathur = new SidhantMathur();
+        addObject(sidhantmathur, 6, 10);
+        sidhantmathur.assignSeat();
   
 
         AkshitMakkar akshitmakkar = new AkshitMakkar();
-        addObject(akshitmakkar,5,7);
+        addObject(akshitmakkar,5,6);
         akshitmakkar.assignSeat();
        
        
@@ -188,7 +217,9 @@ public class Classroom extends World
         addObject(anuragjakkula, 6,4);
         anuragjakkula.assignSeat();
 
-
+        RyanSaleh ryansaleh = new RyanSaleh();
+        addObject(ryansaleh, 5, 7);
+        ryansaleh.assignSeat();
         
         AdityaDas adityadas = new AdityaDas();
         addObject(adityadas, 8, 6);
@@ -232,6 +263,7 @@ public class Classroom extends World
         addObject(alessandrayu,2,7);
         alessandrayu.assignSeat();
 
+
         RamanArora ramanarora = new RamanArora();
         addObject(ramanarora,9,7);
         ramanarora.assignSeat();
@@ -240,7 +272,11 @@ public class Classroom extends World
         TharunSelvakumar tharunselvakumar = new TharunSelvakumar();
         addObject(tharunselvakumar,5,9);
         tharunselvakumar.assignSeat();
-        
+
+        HariniSuresh harinisuresh = new HariniSuresh();
+        addObject(harinisuresh,3,6);
+        harinisuresh.assignSeat();
+
         
         MohitVarikuti mohitvarikuti = new MohitVarikuti();
         addObject(mohitvarikuti, 2, 3);
@@ -254,7 +290,18 @@ public class Classroom extends World
         ChandiniChennakesavan chandinichennakesavan = new ChandiniChennakesavan();
         addObject(chandinichennakesavan,9,10);
         chandinichennakesavan.assignSeat();
-
+        
+        AniszewskiSky aniszewskisky = new AniszewskiSky();
+        addObject(aniszewskisky,9,6);
+        aniszewskisky.assignSeat();
+        
+        SuriyaGnanasundar suriyagnanasundar = new SuriyaGnanasundar();
+        addObject(suriyagnanasundar,8,10);
+        suriyagnanasundar.assignSeat();
+        
+        PhillipChu phillipchu = new PhillipChu();
+        addObject(phillipchu,8,3);
+        phillipchu.assignSeat();
 
 
     }
@@ -288,6 +335,7 @@ public class Classroom extends World
             appendFile(newChartFile,instantiate);
             appendFile(newChartFile,placeStudent);  
             appendFile(newChartFile,assignSeat);
+            System.out.println(s);
             
         }
         Greenfoot.ask("Your file has been saved as: "+newChartFile+"     -Press [Enter] to continue.");

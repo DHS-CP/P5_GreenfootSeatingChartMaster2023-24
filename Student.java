@@ -104,7 +104,54 @@ public abstract class Student extends Actor
         returnToSeat();
     }
     
+/**
+ * Description of tableCultDance()
+ * Makes the members of the table run around the table, almost like a cult.
+ * They will also spin around the table
+ * Hold down the A key to run.
+ * 
+ * @author Jonathan Adrian
+ * @author Siddhi Ananya
+ * @author Philip Chu
+ * @author Prajwal Dacharla
+ */
+public void tableCultDance()
+{
 
+    int originalX = 7;
+    int originalY = 5;
+    for (int i = 0; i < 3; i++)
+    {
+        setLocation(originalX, originalY);
+        turn(30);
+        Greenfoot.delay(5);
+        originalY--;
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        setLocation(originalX, originalY);
+        turn(30);
+        Greenfoot.delay(5);
+        originalX++;
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        setLocation(originalX, originalY);
+        turn(30);
+        Greenfoot.delay(5);
+        originalY++;
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        setLocation(originalX, originalY);
+        turn(30);
+        Greenfoot.delay(5);
+        originalX--;
+    }
+    Greenfoot.delay(3);
+    setRotation(0);
+    returnToSeat();
+}
     
  /**
  * Description of epicDanceMove()
@@ -214,7 +261,78 @@ public void epicDanceMove() {
         
 
     }
+    
+    /** Description of twirlClass()
+ * student twirls around the class, teleporting to each corner of the room and near the desks 
+ * each time the student teleports, they turn slightly
+ * student teleports in a circle in the center of the classroom slowly
+ * after they are done twirling around, the student does one final spin and teleports back to their original seat
+ * 
+ * @author Harini Suresh
+ * @author Alessandra Yu
+ * @author Kevin Tend
+ * @author Daniel Yawar
+
+ * @version Aug 31, 2023.
+ *
+  */
+    public void twirlClass(){
+        
+        setLocation(1, 2);
+        Greenfoot.delay(15);
+        
+        setLocation(5, 2);
+        Greenfoot.delay(15);
+        
+        setLocation(10, 2);
+        Greenfoot.delay(15);
+        
+        setLocation(10, 6);
+        Greenfoot.delay(15);
+        
+        setLocation(10, 11);
+        Greenfoot.delay(15);
+        
+        setLocation(6, 11);
+        Greenfoot.delay(15);
+        
+        setLocation(1, 11);
+        Greenfoot.delay(15);
+        
+        setLocation(1, 7);
+        Greenfoot.delay(15);
+
+        
+        turn(72);
+        setLocation(7, 4);
+        Greenfoot.delay(30);
+        
+        turn(72);
+        setLocation(7, 7);
+        Greenfoot.delay(30);
+        
+        turn(72);
+        setLocation(5, 7);
+        Greenfoot.delay(30);
+        
+        turn(72);
+        setLocation(5, 4);
+        Greenfoot.delay(30);
+        
+        turn(72);
+        setLocation(7, 4);
+        Greenfoot.delay(30);
+
+        for (int i = 0; i < 18; i++) {
+                turn(20);
+                Greenfoot.delay(10);
+        }
+         
+        returnToSeat();
+}
+
+    }
+
  
 
-}
 
