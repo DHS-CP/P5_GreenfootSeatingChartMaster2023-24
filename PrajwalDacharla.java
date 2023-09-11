@@ -61,6 +61,7 @@ public class PrajwalDacharla extends Student implements SpecialInterestOrHobby
         if(Greenfoot.isKeyDown("a")){
             tableCultDance();
         }
+
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;

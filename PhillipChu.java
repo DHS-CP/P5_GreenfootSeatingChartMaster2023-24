@@ -59,9 +59,11 @@ public class PhillipChu extends Student implements SpecialInterestOrHobby
     public void act() 
     {
         // Add your action code here.
+
         if(Greenfoot.isKeyDown("a")){
             tableCultDance();
         }
+
         if(Greenfoot.mouseClicked(this)){
           //  if (sitting){
                 sitting=false;
