@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c1342f8-8375-4277-bcde-e7c42ca11547" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Classroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/Classroom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DheeshikRamachandran.java" beforeDir="false" afterPath="$PROJECT_DIR$/DheeshikRamachandran.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/dheeshikramachandran-standing.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/dheeshikramachandran-standing.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhillipChu.java" beforeDir="false" afterPath="$PROJECT_DIR$/PhillipChu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrajwalDacharla.java" beforeDir="false" afterPath="$PROJECT_DIR$/PrajwalDacharla.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.greenfoot" beforeDir="false" afterPath="$PROJECT_DIR$/project.greenfoot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sounds/dheeshikramachandran.m4a" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": -1
+}]]></component>
   <component name="ProjectId" id="2UjKXOBwCa2KPUenlkNRTk9Ao5a" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,9 +31,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "dheeshik-ramachandran",
+    "git-widget-placeholder": "jonathan-adrian をマージ中",
     "last_opened_file_path": "/Users/dheeshik/Desktop/P5_GreenfootSeatingChartMaster2023-24",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
@@ -43,6 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1693447589038</updated>
       <workItem from="1693447590504" duration="22000" />
+      <workItem from="1694457399377" duration="68000" />
     </task>
     <servers />
   </component>

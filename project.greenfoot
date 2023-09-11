@@ -133,11 +133,19 @@ dependency8.type=UsesDependency
 dependency9.from=Classroom
 dependency9.to=PrajwalDacharla
 dependency9.type=UsesDependency
+<<<<<<< HEAD
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=814
+=======
 editor.fx.0.height=728
 editor.fx.0.width=800
 editor.fx.0.x=1130
 editor.fx.0.y=252
 height=1046
+>>>>>>> master
 package.numDependencies=43
 package.numTargets=52
 project.charset=UTF-8
@@ -519,7 +527,14 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< HEAD
+width=1159
+world.lastInstantiated=Classroom
+xPosition=15
+yPosition=25
+=======
 width=1329
 world.lastInstantiated=Classroom
 xPosition=15
 yPosition=44
+>>>>>>> master

@@ -104,7 +104,54 @@ public abstract class Student extends Actor
         returnToSeat();
     }
     
+/**
+ * Description of tableCultDance()
+ * Makes the members of the table run around the table, almost like a cult.
+ * They will also spin around the table
+ * Hold down the A key to run.
+ * 
+ * @author Jonathan Adrian
+ * @author Siddhi Ananya
+ * @author Philip Chu
+ * @author Prajwal Dacharla
+ */
+public void tableCultDance()
+{
 
+    int originalX = 7;
+    int originalY = 5;
+    for (int i = 0; i < 3; i++)
+    {
+        setLocation(originalX, originalY);
+        turn(30);
+        Greenfoot.delay(5);
+        originalY--;
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        setLocation(originalX, originalY);
+        turn(30);
+        Greenfoot.delay(5);
+        originalX++;
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        setLocation(originalX, originalY);
+        turn(30);
+        Greenfoot.delay(5);
+        originalY++;
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        setLocation(originalX, originalY);
+        turn(30);
+        Greenfoot.delay(5);
+        originalX--;
+    }
+    Greenfoot.delay(3);
+    setRotation(0);
+    returnToSeat();
+}
     
  /**
  * Description of epicDanceMove()
